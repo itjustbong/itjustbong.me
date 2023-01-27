@@ -1,7 +1,7 @@
 const CONFIG = {
   // profile setting (required)
   profile: {
-    name: "itjustbong",
+    name: "봉승우",
     image: "/avatar.png", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
     role: "FE DEV",
     bio: "기술의 발전에 낙오되는 사람이 없도록",
@@ -18,7 +18,7 @@ const CONFIG = {
   ],
   // blog setting (required)
   blog: {
-    title: "itjustbong",
+    title: "ITJUSTBONG",
     description: "itjustbong's blog",
     theme: "auto", // ['light', 'dark', 'auto']
   },
@@ -29,7 +29,7 @@ const CONFIG = {
   lang: "en-US", // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES', 'ko-KR']
   ogImageGenerateURL: "https://og-image-korean.vercel.app", // The link to generate OG image, don't end with a slash
   seo: {
-    keywords: ["Blog", "Website", "Notion"],
+    keywords: ["봉승우", "itjustbong"],
   },
 
   // notion configuration (required)
