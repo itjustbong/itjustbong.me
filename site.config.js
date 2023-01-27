@@ -2,9 +2,9 @@ const CONFIG = {
   // profile setting (required)
   profile: {
     name: "itjustbong",
-    image: "/avatar.svg", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
+    image: "/avatar.png", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
     role: "FE DEV",
-    bio: "기술의 발전에 낙오되는 사람이 나오지 않도록",
+    bio: "기술의 발전에 낙오되는 사람이 없도록",
     email: "qhdgkdbs@gmail.com",
     linkedin: "승우-봉-19108514a",
     github: "itjustbong",
