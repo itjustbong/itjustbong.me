@@ -2,17 +2,17 @@ import Layout from "@components/Layout"
 import CONFIG from "../../site.config"
 import { NextPageWithLayout } from "./_app"
 
-const IndexPage: NextPageWithLayout = () => {
+const PortfolioPage: NextPageWithLayout = () => {
   return (
     <div>
-      <div>메인 페이지</div>
+      <div>포토폴리오 페이지</div>
       <div>준비 중...👻</div>
       <div>빨리 만들어볼께용...ㅎ</div>
     </div>
   )
 }
 
-IndexPage.getLayout = function getlayout(page) {
+PortfolioPage.getLayout = function getlayout(page) {
   return (
     <Layout
       metaConfig={{
@@ -27,4 +27,4 @@ IndexPage.getLayout = function getlayout(page) {
   )
 }
 
-export default IndexPage
+export default PortfolioPage
