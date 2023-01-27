@@ -17,7 +17,7 @@ const PostCard: React.FC<Props> = ({ post }) => {
       <a>
         <article
           key={post.id}
-          className="overflow-hidden mb-6 md:mb-8 rounded-2xl bg-white dark:bg-zinc-700 hover:shadow-lg transition-shadow "
+          className="overflow-hidden mb-6 md:mb-8 rounded-md bg-white dark:bg-zinc-700 hover:shadow-lg transition-shadow "
         >
           {post.thumbnail && (
             <div className="relative w-full pb-[66%] lg:pb-[50%] bg-gray-200 dark:bg-zinc-700 ">
@@ -36,24 +36,6 @@ const PostCard: React.FC<Props> = ({ post }) => {
               </h2>
             </header>
             <div className="flex items-center gap-2 mb-4">
-              {/* {post.author && post.author[0] && (
-                <>
-                  <div className="flex items-center gap-1">
-                    <Image
-                      className="rounded-full"
-                      src={post.author[0].profile_photo}
-                      alt="profile_photo"
-                      loader={imageLoader}
-                      width={20}
-                      height={20}
-                    />
-                    <div className="text-sm text-gray-500 dark:text-gray-400">
-                      {`${post.author[0].last_name}${post.author[0].first_name}`}
-                    </div>
-                  </div>
-                  <div className="self-stretch w-px my-1 bg-gray-300"></div>
-                </>
-              )} */}
               <div className="text-sm text-gray-500 dark:text-gray-400 md:ml-0">
                 {formatDate(
                   post?.date?.start_date || post.createdTime,
