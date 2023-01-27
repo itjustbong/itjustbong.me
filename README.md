@@ -1,7 +1,7 @@
 # 📌 itjustbong.me
 
 - 봉승우를 소개하는 페이지
-- 해당 프로젝트는 [morethan-log](https://www.notion.so/itjustbong/89cb1bb6ae424064a2b84c4bdc7cf882?v=a4efa80742024b4fbd42db9388a66dcc)를 기반으로 제작됨
+- 해당 프로젝트는 [morethan-log](https://github.com/morethanmin/morethan-log)를 기반으로 제작됨
 
 # 📌 프로젝트의 동기
 
