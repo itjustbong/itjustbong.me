@@ -1,56 +1,40 @@
-# morethan-log
+# 📌 itjustbong.me
 
-<img width="1715" alt="image" src="https://user-images.githubusercontent.com/72514247/209824600-ca9c8acc-6d2d-4041-9931-43e34b8a9a5f.png">
+- 봉승우를 소개하는 페이지
+- 해당 프로젝트는 [morethan-log](https://www.notion.so/itjustbong/89cb1bb6ae424064a2b84c4bdc7cf882?v=a4efa80742024b4fbd42db9388a66dcc)를 기반으로 제작됨
 
-Next.js static blog using Notion as a Content Management System (CMS). Supports both Blog format Post as well as Page format for Resume. Deployed using Vercel.
+# 📌 프로젝트의 동기
 
-[Demo Blog](https://morethan-log.vercel.app) | [Demo Resume](https://morethan-log.vercel.app/resume)
+- 📚 나를 소개할 수 있는 온라인 명함이 필요
 
-## Features
+  - 연락처 공유 (깃허브, 링크드인, 인스타, 이메일)
+  - 노션에 정리된 기술 관련 내용 공유
+  - Velog 등의 외부 블로그 글 공유
+  - 프로젝트 포토폴리오 정리 및 공유
+  - 경력 사항 정리 및 공유
 
-**📒 Writing posts using notion**
+- 📚 다가오는 킹업 시기
+  - 창업이든 취업이든 FE 개발에 관심이 있다는 것을 알리기 위함
 
-- No need of commiting to Github for posting anything to your website.
-- Posts made on Notion are automaticaly updated on your site.
+# 📌 프로젝트 소개 및 설명
 
-**📄 Use as a page as resume**
+## 기술
 
-- Useful for generating full page sites using Notion.
-- Can be used for Resume, Portfolios etc.
+- `morethan-log`의 노션 API 활용 및 세팅을 활용
 
-**👀 SEO friendly**
+## 내용
 
-- Dynamically generates OG IMAGEs (thumbnails!) for posts. ([og-image-korean](https://github.com/morethanmin/og-image-korean)).
-- Dynamically creates sitemap for posts.
-
-**🤖 Customisable and Supports various plugin through CONFIG**
-
-- Your profile information can be updated through Config. (`site.config.js`)
-- Plugins support includes, Google Analytics, Search Console and also Commenting using Github Issues(Utterances).
-
-## Getting Started
-
-1. Star this repo.
-2. [Fork](https://github.com/morethanmin/morethan-log/fork) the repo to your Profile.
-3. Duplicate [this Notion template](https://quasar-season-ed5.notion.site/12c38b5f459d4eb9a759f92fba6cea36?v=2e7962408e3842b2a1a801bf3546edda), and Share to Web.
-4. Copy the Web Link and keep note of the Notion Page Id from the Link which will be in this format [username.notion.site/`NOTION_PAGE_ID`?v=`VERSION_ID`].
-5. Clone your forked repo and then customize `site.config.js` based on your preference.
-6. Deploy on Vercel, with the following environment variables.
-
-   - `NOTION_PAGE_ID` (Required): The Notion page Id got from the Share to Web URL.
-   - `GOOGLE_MEASUREMENT_ID` : For Google analytics Plugin.
-   - `GOOGLE_SITE_VERIFICATION` : For Google search console Plugin.
-
-## Contributing
-
-Check out the [Contributing Guide](.github/CONTRIBUTING.md).
-
-## Support
-
-morethan-log is an MIT-licensed open source project. It can grow thanks to the sponsors and support from the amazing backers.
-
-## License
-
-The MIT License.
-
-> This projects is based on [nobelium](https://github.com/craigary/nobelium).
+- 📚 메인 탭
+  - 개발자로서의 나를 소개 (목표, 철학 등)
+  - 간략한 히스코리 공유
+  - 인터렉티브한 요소 접목
+- 📚 포스팅 탭
+  - 노션에 정리된 알아두면 쓸데있는 내용 공유
+  - 벨로그에 정리된 개발 프로젝트 포스팅 공유
+- 📚 포토폴리오 탭
+  - 소개하고 싶은 게시글 상단 노출
+  - 진행했던 개발 프로젝트들
+    - 프로젝트 중 일부는 상세 소개, 일부는 소개 제외
+- 📚 히스토리 탭
+  - 실무 경험에 대한 컴포넌트
+  - 수상 등 여러 경험 정리
