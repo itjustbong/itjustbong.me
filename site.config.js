@@ -4,7 +4,7 @@ const CONFIG = {
     name: "봉승우",
     image: "/avatar.png", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
     role: "FE DEV",
-    bio: "기술의 발전에 낙오되는 사람이 없도록",
+    bio: "try, catch, learn",
     email: "qhdgkdbs@gmail.com",
     linkedin: "승우-봉-19108514a",
     github: "itjustbong",
@@ -20,7 +20,7 @@ const CONFIG = {
   blog: {
     title: "ITJUSTBONG",
     description: "itjustbong's blog",
-    theme: "auto", // ['light', 'dark', 'auto']
+    theme: "light", // ['light', 'dark', 'auto']
   },
 
   // CONFIG configration (required)
