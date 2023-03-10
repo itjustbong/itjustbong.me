@@ -2,12 +2,12 @@ import Link from "next/link"
 import { useRouter } from "next/router"
 
 const NavBar: React.FC = () => {
-  const { pathname } = useRouter()
+  const router = useRouter()
   const links = [
     { id: 1, name: "메인", to: "/" },
-    { id: 2, name: "기록", to: "/feed" },
-    { id: 3, name: "포폴", to: "/portfolio" },
-    { id: 4, name: "경험", to: "/history" },
+    { id: 2, name: "경험", to: "/feed" },
+    // { id: 3, name: "기록", to: "/post" },
+    { id: 4, name: "이력서", to: "/resume" },
   ]
   return (
     <div className="flex-shrink-0">
@@ -16,7 +16,8 @@ const NavBar: React.FC = () => {
           <li
             key={link.id}
             className={`block ml-4 text-black dark:text-gray-50 nav ${
-              pathname === link.to && "font-bold underline underline-offset-8"
+              router.asPath === link.to &&
+              "font-bold underline underline-offset-8"
             }`}
           >
             <Link href={link.to}>

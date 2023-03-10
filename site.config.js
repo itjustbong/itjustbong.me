@@ -13,7 +13,23 @@ const CONFIG = {
   projects: [
     {
       name: `itjustbong.me`,
-      href: "itjustbong.me",
+      href: "https://www.itjustbong.me",
+    },
+    {
+      name: `세상의 모든 뉴스레터`,
+      href: "https://itjustbong.github.io/newsletter-service/",
+    },
+    {
+      name: `고객 소통하는 법, 센디`,
+      href: "https://www.sendee.kr/",
+    },
+    {
+      name: `숭실대학교 LMS 확장 프로그램`,
+      href: "https://chrome.google.com/webstore/detail/lms-tools/hgckkbadbjekgldameanmpblbejmhofl?hl=ko&authuser=0",
+    },
+    {
+      name: `밀레코리아 CS 상담 챗봇`,
+      href: "https://pf.kakao.com/_gYxhnM",
     },
   ],
   // blog setting (required)

@@ -12,12 +12,12 @@ type Props = {
 const PostHeader: React.FC<Props> = ({ data }) => {
   return (
     <>
-      <h1 className="font-bold text-3xl text-black dark:text-white">
+      {/* <h1 className="font-bold text-3xl text-black dark:text-white">
         {data.title}
-      </h1>
+      </h1> */}
       {data.type[0] !== "Paper" && (
         <nav className="mt-6 text-gray-500 dark:text-gray-400">
-          <div className="flex items-center gap-3 mb-3">
+          {/* <div className="flex items-center gap-3 mb-3">
             {data.author && data.author[0] && data.author[0].name && (
               <>
                 <div className="flex items-center gap-2">
@@ -33,22 +33,25 @@ const PostHeader: React.FC<Props> = ({ data }) => {
                 <div className="self-stretch w-px my-1 bg-gray-300"></div>
               </>
             )}
+
             <div className=" mr-2 md:ml-0">
               {formatDate(
                 data?.date?.start_date || data.createdTime,
                 CONFIG.lang
               )}
             </div>
-          </div>
-          <div className="flex items-center mb-4">
-            {data.tags && (
+          </div> */}
+
+          {data.tags && (
+            <div className="flex items-center mb-4">
               <div className="flex flex-nowrap max-w-full overflow-x-auto article-tags gap-2">
                 {data.tags.map((tag: string) => (
                   <Tag key={tag}>{tag}</Tag>
                 ))}
               </div>
-            )}
-          </div>
+            </div>
+          )}
+
           {data.thumbnail && (
             <div className="relative w-full pb-[66%] lg:pb-[50%] bg-gray-200 dark:bg-zinc-700 mb-7 rounded-md overflow-hidden">
               <Image
