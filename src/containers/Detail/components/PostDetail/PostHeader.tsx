@@ -12,12 +12,12 @@ type Props = {
 const PostHeader: React.FC<Props> = ({ data }) => {
   return (
     <>
-      {/* <h1 className="font-bold text-3xl text-black dark:text-white">
+      <h1 className="font-bold text-3xl text-black dark:text-white">
         {data.title}
-      </h1> */}
+      </h1>
       {data.type[0] !== "Paper" && (
         <nav className="mt-6 text-gray-500 dark:text-gray-400">
-          {/* <div className="flex items-center gap-3 mb-3">
+          <div className="flex items-center gap-3 mb-3">
             {data.author && data.author[0] && data.author[0].name && (
               <>
                 <div className="flex items-center gap-2">
@@ -40,7 +40,7 @@ const PostHeader: React.FC<Props> = ({ data }) => {
                 CONFIG.lang
               )}
             </div>
-          </div> */}
+          </div>
 
           {data.tags && (
             <div className="flex items-center mb-4">
