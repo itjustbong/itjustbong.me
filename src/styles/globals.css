@@ -116,3 +116,25 @@ nav {
     overflow-x: hidden;
   }
 }
+
+@keyframes img-album-rotate {
+  0% {
+    transform: rotate(0);
+  }
+  33% {
+    transform: rotate(-20deg);
+  }
+  66% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+.image-20-animation:hover {
+  animation-name: img-album-rotate;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
