@@ -17,7 +17,7 @@ const PostCard: React.FC<Props> = ({ post }) => {
       <a>
         <article
           key={post.id}
-          className="overflow-hidden mb-6 md:mb-8 rounded-md bg-white dark:bg-zinc-700 hover:shadow-lg transition-shadow "
+          className="overflow-hidden mb-6 md:mb-8 rounded-md bg-white dark:bg-zinc-700 hover:shadow-lg transition-shadow lg:min-h-[420px]"
         >
           {post.thumbnail && (
             <div className="relative w-full pb-[66%] lg:pb-[50%] bg-gray-200 dark:bg-zinc-700 ">
@@ -36,15 +36,15 @@ const PostCard: React.FC<Props> = ({ post }) => {
               </h2>
             </header>
             <div className="flex items-center gap-2 mb-4">
-              <div className="text-sm text-gray-500 dark:text-gray-400 md:ml-0">
+              {/* <div className="text-sm text-gray-500 dark:text-gray-400 md:ml-0">
                 {formatDate(
                   post?.date?.start_date || post.createdTime,
                   CONFIG.lang
                 )}
-              </div>
+              </div> */}
             </div>
             <main className="mb-4">
-              <p className="hidden md:block leading-8 text-gray-700 dark:text-gray-300">
+              <p className="block leading-8 text-gray-700 dark:text-gray-300">
                 {post.summary}
               </p>
             </main>
