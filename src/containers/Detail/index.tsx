@@ -17,12 +17,7 @@ const Detail: React.FC<Props> = ({ blockMap, data }) => {
 
   return (
     <div>
-      {data.type[0] === "Page" && (
-        <PageDetail data={data} blockMap={blockMap} />
-      )}
-      {data.type[0] !== "Page" && (
-        <PostDetail data={data} blockMap={blockMap} />
-      )}
+      <PostDetail data={data} blockMap={blockMap} />
     </div>
   )
 }

@@ -18,7 +18,7 @@ const Layout: React.FC<Props> = ({
     <div>
       <MetaConfig {...metaConfig} />
       <div className={`wrapper`}>
-        {metaConfig.type !== "Paper" && <Header fullWidth={fullWidth} />}
+        <Header fullWidth={fullWidth} />
         <main
           className={`m-auto flex-grow w-full transition-all max-w-6xl px-4 md:grid grid-cols-12 gap-6 ${
             fullWidth && "px-4 md:px-24"

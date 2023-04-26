@@ -64,12 +64,12 @@ const PostDetail: React.FC<Props> = ({ blockMap, data }) => {
             />
           </div>
         )}
-        {data.type[0] === "Post" && (
+        {/* {data.type[0] === "Post" && (
           <>
             <Footer />
             <CommentBox data={data} />
           </>
-        )}
+        )} */}
       </article>
     </div>
   )
