@@ -26,11 +26,8 @@ const Layout: React.FC<Props> = ({
         >
           {/* <div className="lg:block col-span-2"></div> */}
 
-          <div className="col-span-12 lg:col-span-9">
-            {children}
-            <Footer className="block lg:hidden flex justify-center pb-8" />
-          </div>
-          <div className="hidden lg:block lg:col-span-3">
+          <div className="col-span-12 md:col-span-9">{children}</div>
+          <div className="hidden md:block md:col-span-3">
             <Cards.ProfileCard />
             <Cards.ServiceCard />
             <Cards.ContactCard />
