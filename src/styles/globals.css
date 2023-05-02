@@ -137,3 +137,26 @@ nav {
   animation-timing-function: ease;
   animation-iteration-count: infinite;
 }
+
+/* for Chrome */
+@-webkit-keyframes text-rotate {
+  from {
+    -webkit-transform: translateX(0%);
+  }
+  to {
+    -webkit-transform: translateX(-100%);
+  }
+}
+
+@keyframes text-rotate {
+  from {
+    -moz-transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+  to {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
