@@ -1,5 +1,9 @@
 /* NOTION CSS OVERRIDE */
 
+.notion-teal {
+  color: green;
+}
+
 .notion {
   font-family: Pretendard, Roboto, sans-serif;
   @apply text-gray-600 dark:text-gray-300;

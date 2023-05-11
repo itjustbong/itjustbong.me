@@ -20,14 +20,12 @@ const Layout: React.FC<Props> = ({
       <div className={`wrapper`}>
         <Header fullWidth={fullWidth} />
         <main
-          className={`m-auto flex-grow w-full transition-all max-w-6xl px-4 md:grid grid-cols-12 gap-6 ${
-            fullWidth && "px-4 md:px-24"
+          className={`m-auto flex-grow w-full transition-all max-w-6xl px-4 xl:grid grid-cols-12 gap-6 ${
+            fullWidth && "px-4 xl:px-24"
           } ${metaConfig.type === "Paper" && "py-10"} `}
         >
-          {/* <div className="lg:block col-span-2"></div> */}
-
-          <div className="col-span-12 md:col-span-9">{children}</div>
-          <div className="hidden md:block md:col-span-3">
+          <div className="col-span-9">{children}</div>
+          <div className="hidden xl:block xl:col-span-3">
             <Cards.ProfileCard />
             <Cards.ServiceCard />
             <Cards.ContactCard />
