@@ -16,6 +16,10 @@ const CONFIG = {
       href: "https://www.itjustbong.me",
     },
     {
+      name: `It Just Counter`,
+      href: "https://visitor-counter.qhdgkdbs.workers.dev/",
+    },
+    {
       name: `세상의 모든 뉴스레터`,
       href: "https://itjustbong.github.io/newsletter-service/",
     },
