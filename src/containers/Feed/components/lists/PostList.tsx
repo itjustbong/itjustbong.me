@@ -43,7 +43,7 @@ const PostList: React.FC<Props> = ({ q, posts, tags }) => {
 
   return (
     <>
-      <div className="lg:grid grid-cols-2 gap-2">
+      <div className="md:grid grid-cols-2 gap-2">
         {!filteredPosts.length && (
           <p className="text-gray-500 dark:text-gray-300">Nothing! 😺</p>
         )}
