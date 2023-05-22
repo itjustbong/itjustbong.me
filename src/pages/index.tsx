@@ -4,8 +4,14 @@ import Link from "next/link"
 import CONFIG from "../../site.config"
 import { NextPageWithLayout } from "./_app"
 import { TypeAnimation } from "react-type-animation"
+import { useEffect } from "react"
+import { useRouter } from "next/router"
 
 const IndexPage: NextPageWithLayout = () => {
+  const router = useRouter()
+  useEffect(() => {
+    router.push("/resume")
+  }, [router])
   return (
     <div className="p-4 bg-white h-[85vh] dark:text-white dark:bg-zinc-700 rounded-md overflow-scroll">
       <div className="font-bold text-5xl text-gray-600 text-center">
