@@ -4,14 +4,8 @@ import Link from "next/link"
 import CONFIG from "../../site.config"
 import { NextPageWithLayout } from "./_app"
 import { TypeAnimation } from "react-type-animation"
-import { useEffect } from "react"
-import { useRouter } from "next/router"
 
 const IndexPage: NextPageWithLayout = () => {
-  const router = useRouter()
-  useEffect(() => {
-    router.push("/resume")
-  }, [router])
   return (
     <div className="p-4 bg-white h-[85vh] dark:text-white dark:bg-zinc-700 rounded-md overflow-scroll">
       <div className="font-bold text-5xl text-gray-600 text-center">
@@ -20,9 +14,6 @@ const IndexPage: NextPageWithLayout = () => {
             "안녕하세요 👋", // Types 'One'
             1000,
             "FE DEV, 봉승우입니다🧑🏻‍💻",
-            // () => {
-            //   console.log("Sequence completed") // Place optional callbacks anywhere in the array
-            // },
           ]}
           wrapper="span"
           cursor={true}
