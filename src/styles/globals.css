@@ -13,6 +13,7 @@ body::-webkit-scrollbar {
 body {
   scrollbar-width: thin;
   scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+  min-width: 350px;
 }
 body::-webkit-scrollbar-track {
   background: var(--scrollbarBG);
