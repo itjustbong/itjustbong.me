@@ -1,80 +1,67 @@
 import Layout from "@components/Layout"
-import Image from "next/image"
-import Link from "next/link"
 import CONFIG from "../../site.config"
 import { NextPageWithLayout } from "./_app"
-import { TypeAnimation } from "react-type-animation"
+import styled from "@emotion/styled"
+import { css } from "@emotion/css"
+import ChatBox from "../components/Widget/ChatBox"
+import NameCard from "../components/Widget/NameCard"
+import BottomBar from "../components/BottomBar"
 
 const IndexPage: NextPageWithLayout = () => {
   return (
-    <div className="p-4 bg-white h-[85vh] dark:text-white dark:bg-zinc-700 rounded-md overflow-scroll">
-      <div className="font-bold text-5xl text-gray-600 text-center">
-        <TypeAnimation
-          sequence={[
-            "안녕하세요 👋", // Types 'One'
-            1000,
-            "FE DEV, 봉승우입니다🧑🏻‍💻",
-          ]}
-          wrapper="span"
-          cursor={true}
-          repeat={1}
-          style={{ fontSize: "1.8rem", display: "inline-block" }}
-        />
-      </div>
-
-      <div className="text-center">
-        <Image
-          src={"/intro/construction.gif"}
-          alt="공사중"
-          width="240px"
-          height="240px"
-        />
-      </div>
-
-      <div className="font-medium text-gray-600 text-center">
-        아직 메인페이지는 준비 중입니다.
-      </div>
-
-      <div className="h-10"></div>
-
-      <div className="flex-col justify-centet mx-auto text-gray-600">
-        <div className="flex justify-center gap-4">
-          <div className="p-4 inline-block rounded-md text-md font-bold">
-            <Link href={"/feed"}>📚 /feed</Link>
+    <Cotainer>
+      <div
+        // 캐로셀 Wrapper
+        className={css`
+          display: flex;
+          min-width: 320px;
+          max-width: 540px;
+          margin: 0 auto;
+          width: 100%;
+          height: calc(100% - 98px - 1rem);
+          counter-reset: item;
+          overflow: scroll;
+          scroll-behavior: smooth;
+          scroll-snap-type: x mandatory;
+          ::-webkit-scrollbar {
+            display: none;
+          }
+        `}
+      >
+        <PageWrapper>
+          <div
+            className={css`
+              grid-area: 1 / 1 / 5 / 5;
+            `}
+          >
+            <ChatBox />
           </div>
-          <div className="p-4 inline-block rounded-md text-md font-bold">
-            <Link href={"/resume"}>📝 /resume</Link>
+          <div
+            className={css`
+              grid-area: 5 / 1 / 7 / 3;
+            `}
+          >
+            <NameCard />
           </div>
-        </div>
+          <div
+            className={css`
+              grid-area: 5 / 3 / 7 / 5;
+            `}
+          >
+            <NameCard />
+          </div>
+        </PageWrapper>
+
+        <PageWrapper>반가워1</PageWrapper>
+        <PageWrapper>반가워2</PageWrapper>
       </div>
-
-      {/* <div>Who Am I</div>
-      <Image
-        src="/intro/who-am-i.gif"
-        alt="개발자"
-        width={"240px"}
-        height={"240px"}
-      />
-      <div>Develop</div> */}
-
-      {/* <div className="border border-black p-5 rounded-xl">
-        <div>Music</div>
-
-        {favMusic.map((music) => (
-          <div key={music.title}>
-            <Image
-              className="rounded-full image-20-animation"
-              src={music.img}
-              alt={music.title}
-              width={"120px"}
-              height={"120px"}
-            />
-            <div>{music.author}</div>
-            <div>{music.description}</div>
-          </div>
-        ))}
-      </div> */}
-    </div>
+      <DotWrapper>
+        <Dot />
+        <Dot />
+        <Dot />
+      </DotWrapper>
+      <BottomBar />
+    </Cotainer>
   )
 }
 
@@ -94,3 +81,50 @@ IndexPage.getLayout = function getlayout(page) {
 }
 
 export default IndexPage
+
+const Dot = styled.div`
+  width: 8px;
+  height: 8px;
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 100%;
+`
+
+const DotWrapper = styled.div`
+  display: flex;
+  gap: 8px;
+`
+
+const PageWrapper = styled.div`
+  scroll-snap-align: center;
+  flex-shrink: 0;
+  min-width: 320px;
+  max-width: 540px;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  counter-increment: item;
+`
+
+const Cotainer = styled.div`
+  background: linear-gradient(
+    180deg,
+    #12c2e9 0%,
+    #c471ed 48.96%,
+    rgba(246, 79, 89, 0.65) 97.4%
+  );
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: scroll;
+  position: relative;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 0.375rem;
+  height: 85vh;
+  gap: 1rem;
+`
