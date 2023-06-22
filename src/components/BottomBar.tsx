@@ -20,22 +20,24 @@ const BottomBar = () => {
             grid-area: 1 / 1 / 2 / 3;
             background-color: black;
             border-radius: 0.5rem;
-            height: 58px;
+            height: 48px;
+            padding: 0 0.5rem;
+            max-width: 180px;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
+            gap: 0.5rem;
           `}
         >
           <Image
             src="/images/github.svg"
-            width="32px"
-            height="32px"
+            width="24px"
+            height="24px"
             alt="github-itjustbong"
           />
           <div
             className={css`
               color: white;
-              font-size: 1.125rem;
             `}
           >
             itjustbong
@@ -53,8 +55,8 @@ const BottomBar = () => {
       >
         <Image
           src="/images/instagram.svg"
-          width="100%"
-          height="64px"
+          width="48px"
+          height="48px"
           alt="github-itjustbong"
         />
       </Link>
@@ -65,16 +67,18 @@ const BottomBar = () => {
         className={css`
           grid-area: 1 / 4 / 2 / 5;
           flex-shrink: 0;
+          flex-grow: 0;
+          width: 48px;
+          height: 48px;
         `}
       >
         <Image
-          src="/images/linkedin.svg"
-          width="100%"
-          height="64px"
+          src="/images/linkedin.png"
+          width="48px"
+          height="48px"
           alt="github-itjustbong"
         />
       </Link>
-
       <Link
         href={연락처.메일}
         target="_blank"
@@ -84,9 +88,9 @@ const BottomBar = () => {
         `}
       >
         <Image
-          src="/images/gmail.svg"
-          width="100%"
-          height="64px"
+          src="/images/gmail.png"
+          width="48px"
+          height="38px"
           alt="github-itjustbong"
         />
       </Link>
@@ -102,16 +106,15 @@ const Container = styled.div`
   backdrop-filter: blur(25px);
   /* Note: backdrop-filter has minimal browser support */
   border-radius: 1rem;
-  min-width: 350px;
+  min-width: 320px;
   max-width: 540px;
   width: 100%;
   height: 98px;
 
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   align-items: center;
-  padding: 0 1rem;
+
+  flex-shrink: 0;
 `
