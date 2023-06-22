@@ -6,6 +6,7 @@ import { css } from "@emotion/css"
 import ChatBox from "../components/Widget/ChatBox"
 import NameCard from "../components/Widget/NameCard"
 import BottomBar from "../components/BottomBar"
+import IntroCard from "../components/Widget/IntroCard"
 
 const IndexPage: NextPageWithLayout = () => {
   return (
@@ -15,7 +16,7 @@ const IndexPage: NextPageWithLayout = () => {
         className={css`
           display: flex;
           min-width: 320px;
-          max-width: 540px;
+          max-width: 480px;
           margin: 0 auto;
           width: 100%;
           height: calc(100% - 98px - 1rem);
@@ -48,7 +49,7 @@ const IndexPage: NextPageWithLayout = () => {
               grid-area: 5 / 3 / 7 / 5;
             `}
           >
-            <NameCard />
+            <IntroCard />
           </div>
         </PageWrapper>
 
@@ -98,7 +99,7 @@ const PageWrapper = styled.div`
   scroll-snap-align: center;
   flex-shrink: 0;
   min-width: 320px;
-  max-width: 540px;
+  max-width: 480px;
   width: 100%;
   height: 100%;
   display: grid;

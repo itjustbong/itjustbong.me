@@ -107,7 +107,7 @@ const Container = styled.div`
   /* Note: backdrop-filter has minimal browser support */
   border-radius: 1rem;
   min-width: 320px;
-  max-width: 540px;
+  max-width: 480px;
   width: 100%;
   height: 98px;
 
