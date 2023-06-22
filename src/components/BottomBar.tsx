@@ -43,49 +43,52 @@ const BottomBar = () => {
         </div>
       </Link>
 
-      <Link href={연락처.인스타그램} target="_blank">
-        <div
-          className={css`
-            grid-area: 1 / 3 / 2 / 4;
-          `}
-        >
-          <Image
-            src="/images/instagram.svg"
-            width="100%"
-            height="64px"
-            alt="github-itjustbong"
-          />
-        </div>
+      <Link
+        href={연락처.인스타그램}
+        target="_blank"
+        className={css`
+          grid-area: 1 / 3 / 2 / 4;
+          flex-shrink: 0;
+        `}
+      >
+        <Image
+          src="/images/instagram.svg"
+          width="100%"
+          height="64px"
+          alt="github-itjustbong"
+        />
       </Link>
 
-      <Link href={연락처.링크드인} target="_blank">
-        <div
-          className={css`
-            grid-area: 1 / 4 / 2 / 5;
-          `}
-        >
-          <Image
-            src="/images/linkedin.svg"
-            width="100%"
-            height="64px"
-            alt="github-itjustbong"
-          />
-        </div>
+      <Link
+        href={연락처.링크드인}
+        target="_blank"
+        className={css`
+          grid-area: 1 / 4 / 2 / 5;
+          flex-shrink: 0;
+        `}
+      >
+        <Image
+          src="/images/linkedin.svg"
+          width="100%"
+          height="64px"
+          alt="github-itjustbong"
+        />
       </Link>
 
-      <Link href={연락처.메일} target="_blank">
-        <div
-          className={css`
-            grid-area: 1 / 5 / 2 / 6;
-          `}
-        >
-          <Image
-            src="/images/gmail.svg"
-            width="100%"
-            height="64px"
-            alt="github-itjustbong"
-          />
-        </div>
+      <Link
+        href={연락처.메일}
+        target="_blank"
+        className={css`
+          grid-area: 1 / 5 / 2 / 6;
+          flex-shrink: 0;
+        `}
+      >
+        <Image
+          src="/images/gmail.svg"
+          width="100%"
+          height="64px"
+          alt="github-itjustbong"
+        />
       </Link>
     </Container>
   )
