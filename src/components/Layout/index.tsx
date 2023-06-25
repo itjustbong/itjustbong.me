@@ -20,7 +20,7 @@ const Layout: React.FC<Props> = ({
       <div className={`wrapper`}>
         <Header fullWidth={fullWidth} />
         <main
-          className={`m-auto flex-grow w-full transition-all max-w-6xl px-4 xl:grid grid-cols-12 gap-6 ${
+          className={`m-auto flex-grow w-full transition-all max-w-6xl px-1 xl:grid grid-cols-12 gap-6 ${
             fullWidth && "px-4 xl:px-24"
           }`}
         >

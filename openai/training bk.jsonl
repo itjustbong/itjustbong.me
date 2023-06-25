@@ -1,0 +1,140 @@
+{"prompt": "타입: 신상정보 \n\n###\n\n", "completion": "이름은 봉승우, 현재 숭실대학교 AI융합학부 소속이며 24.02월 졸업예정이다. 의경을 통해 군 복무를 마쳤다. 생년월일은 1998년 09월 14일 생이다. 또한 전화번호는 01059379898이며, 이메일은 qhdgkdbs@gmail.com 이다. 깃허브와 인스타그램 아이디는 모두 itjustbong이다. 개인 포토폴리오 사이트로는 itjustbong.me를 운영하고 있다."}
+{"prompt": "타입: 소개 \n\n###\n\n", "completion": "도전적이며 자기주도적인 삶을 지향하는, 봉승우입니다. 친구와 함께한 첫 창업(도전)은 예비창업패키지를 비롯한 다양한 사업에 선정되어, 다수의 팀원들과 공통된 목표를 위해 협력하고, BM이 포함된 플랫폼을 처음부터 끝까지 기획, 개발, 운영했던 경험이 있습니다. 이 외에도 3건의 특허 출원과 2년간 2만명 이상이 이용한 서비스를 개발하는 등의 도전을 해왔습니다."}
+
+// 센디
+{"prompt": "타입: 참여한 회사 프로젝트 \n\n프로젝트명: Sendee (센디) \n\n 분류: 간략소개 \n\n###\n\n", "completion": "중 장년층을 타겟으로한 종합 마케팅 플랫폼"}
+{"prompt": "타입: 참여한 회사 프로젝트 \n\n프로젝트명: Sendee (센디) \n\n 분류: 소개글 링크 \n\n###\n\n", "completion": "https://www.itjustbong.me/sendee-platform"}
+{"prompt": "타입: 참여한 회사 프로젝트 \n\n프로젝트명: Sendee (센디) \n\n 분류: 서비스 링크 \n\n###\n\n", "completion": "https://www.sendee.kr/"}
+{"prompt": "타입: 참여한 회사 프로젝트 \n\n프로젝트명: Sendee (센디) \n\n 분류: 참여인원 \n\n###\n\n", "completion": "FE 1명, BE 1명"}
+{"prompt": "타입: 참여한 회사 프로젝트 \n\n프로젝트명: Sendee (센디) \n\n 분류: 개발기간 \n\n###\n\n", "completion": "22.07 ~ 23.01"}
+{"prompt": "타입: 참여한 회사 프로젝트 \n\n프로젝트명: Sendee (센디) \n\n 분류: 개발동기 \n\n###\n\n", "completion": "중 장년층을 타겟으로한 하는 마케팅 솔루션 부재했으며, 기존 애드센스의 전환율의 저조 => 마케팅 타겟의 특성을 활용한 마케팅 플랫폼 기획, 개발"}
+{"prompt": "타입: 참여한 회사 프로젝트 \n\n프로젝트명: Sendee (센디) \n\n 분류: 활용스택 \n\n###\n\n", "completion": "Next, Emotion, Recoil, Tailwind, TanStack Query"}
+{"prompt": "타입: 참여한 회사 프로젝트 \n\n프로젝트명: Sendee (센디) \n\n 분류: 무엇을 했는가 \n\n###\n\n", "completion": "프로젝트 리드로 참여하여 일정 조정, 외부 업체 협력 관리 및 지원사업 지원/선정 | 동적 페이지의 오픈 그래프 설정을 위한 SSR 적용 | 500건 이상의 데이터를 올리고 내리는데 발생하는 긴 로딩시간, 에러 발생 문제를 해결하기 위해 Promise 객체를 활용한 비동기 처리로 사용자 UX개선 | Errorboundary를 활용하여 서비스에서 발생하는 에러 전파를 차단할 수 있도록 개발 | 브라우저 별 고유 값을 활용하여 광고-랜딩페이지에 누가, 얼마나 오래, 어떤 활동을 했는지를 기록하여 데이터 분석에 활용할 수 있도록 개발 | 주요 서비스에서 데이터 특성에 맞게 최적의 화면으로 보여주기 위해 테이블 컴포넌트를 개발하여, 요구사항에 따라 컴포넌트 활용"}
+
+// 룬티
+{"prompt": "타입: 참여한 회사 프로젝트 \n\n프로젝트명: Lunte (룬티) \n\n 분류: 간략소개 \n\n###\n\n", "completion": "기업과 대학생을 위한 ESG 플랫폼"}
+{"prompt": "타입: 참여한 회사 프로젝트 \n\n프로젝트명: Lunte (룬티) \n\n 분류: 소개글 링크 \n\n###\n\n", "completion": "https://www.itjustbong.me/sg-lunte"}
+{"prompt": "타입: 참여한 회사 프로젝트 \n\n프로젝트명: Lunte (룬티) \n\n 분류: 참여인원 \n\n###\n\n", "completion": "개발자 2명"}
+{"prompt": "타입: 참여한 회사 프로젝트 \n\n프로젝트명: Lunte (룬티) \n\n 분류: 개발기간 \n\n###\n\n", "completion": "21.02 ~ 22.01"}
+{"prompt": "타입: 참여한 회사 프로젝트 \n\n프로젝트명: Lunte (룬티) \n\n 분류: 개발동기 \n\n###\n\n", "completion": "21년도에 ESG 키워드가 급부상했지만 ESG 정보, 프로젝트를 다루는 커뮤니티의 부재 => ESG 활동을 통해 기업과 대학생을 이어주고, 정보를 공유할 수 있는 ESG 플랫폼 개발"}
+{"prompt": "타입: 참여한 회사 프로젝트 \n\n프로젝트명: Lunte (룬티) \n\n 분류: 활용스택 \n\n###\n\n", "completion": "React, Node.js, Express, MongoDB, AWS"}
+{"prompt": "타입: 참여한 회사 프로젝트 \n\n프로젝트명: Lunte (룬티) \n\n 분류: 무엇을 했는가 \n\n###\n\n", "completion": "개발팀 리드로 참여하여 다수의 지원사업 선정 및 특허 출원 | 봉사활동 데이터를 파싱하기 위한 VMS, 1365 사이트 스크래핑 및 데이터 가공 기능 구현 | 커스텀 훅을 통해 사용자 환경을 체크하고 모바일, PC 버전 대응을 위한 반응형 웹 개발 | AWS Personalize와 사용자 정보, 게시글 정보, 인터렉션 기록을 활용하여 사용자 추천 게시물 기능 구현"}
+
+
+// CS 플랫폼
+{"prompt": "타입: 참여한 회사 프로젝트 \n\n프로젝트명: CS 플랫폼 \n\n 분류: 간략소개 \n\n###\n\n", "completion": "상담 챗봇 및 CS응대 서비스"}
+{"prompt": "타입: 참여한 회사 프로젝트 \n\n프로젝트명: CS 플랫폼 \n\n 분류: 소개글 링크 \n\n###\n\n", "completion": "https://www.itjustbong.me/mk-chat-cs-tool"}
+{"prompt": "타입: 참여한 회사 프로젝트 \n\n프로젝트명: CS 플랫폼 \n\n 분류: 서비스 링크 \n\n###\n\n", "completion": "https://pf.kakao.com/_gYxhnM"}
+{"prompt": "타입: 참여한 회사 프로젝트 \n\n프로젝트명: CS 플랫폼 \n\n 분류: 참여인원 \n\n###\n\n", "completion": "1인 프로젝트"}
+{"prompt": "타입: 참여한 회사 프로젝트 \n\n프로젝트명: CS 플랫폼 \n\n 분류: 개발기간 \n\n###\n\n", "completion": "21.01 ~ 21.02"}
+{"prompt": "타입: 참여한 회사 프로젝트 \n\n프로젝트명: CS 플랫폼 \n\n 분류: 개발동기 \n\n###\n\n", "completion": "코로나로 인한 CS부서의 인력 부족으로 고객 불만 폭증 및 CS팀원 분들의 과로 문제 => 카톡 API를 활용하여 챗봇 서비스를 제공하고, 필요에 따라 상담을 이어나갈 수 있는 서비스 개발"}
+{"prompt": "타입: 참여한 회사 프로젝트 \n\n프로젝트명: CS 플랫폼 \n\n 분류: 활용스택 \n\n###\n\n", "completion": "React, Node.js, Express, MongoDB, Kakao Chatbot"}
+{"prompt": "타입: 참여한 회사 프로젝트 \n\n프로젝트명: CS 플랫폼 \n\n 분류: 무엇을 했는가 \n\n###\n\n", "completion": "카카오톡 플러스 친구 챗봇 API를 활용한 문의 접수, 배송 조회, 이미지 업로드 등의 기능을 구현 | 접수된 CS건을 해당 부서에서 관리할 수 있도록 매니지먼트 웹 시스템 개발 | CS 회신을 위한 외부 문자 발송 시스템 연동 및 매일 아침 미응답 CS건을 메일로 보내어 빠른 회신이 가능하도록 유도 | 홈 서버와 구축 경험을 바탕으로 회사 내부망에서만 접속이 가능하도록 배포 구축 | 2년간 약 2만여 건의 문의 응대 완료"}
+
+// 한큐 플랜트
+{"prompt": "타입: 참여한 회사 프로젝트 \n\n프로젝트명: 한큐 플랜트 \n\n 분류: 간략소개 \n\n###\n\n", "completion": "조경수 거래의 피해를 최소화하기 위한 조경수 안전거래 플랫폼"}
+// {"prompt": "타입: 참여한 회사 프로젝트 \n\n프로젝트명: 한큐 플랜트 \n\n 분류: 소개글 링크 \n\n###\n\n", "completion": ""}
+// {"prompt": "타입: 참여한 회사 프로젝트 \n\n프로젝트명: 한큐 플랜트 \n\n 분류: 서비스 링크 \n\n###\n\n", "completion": ""}
+{"prompt": "타입: 참여한 회사 프로젝트 \n\n프로젝트명: 한큐 플랜트 \n\n 분류: 참여인원 \n\n###\n\n", "completion": "1인 유지보수 참여"}
+{"prompt": "타입: 참여한 회사 프로젝트 \n\n프로젝트명: 한큐 플랜트 \n\n 분류: 개발기간 \n\n###\n\n", "completion": "22.02 ~ 22.07"}
+{"prompt": "타입: 참여한 회사 프로젝트 \n\n프로젝트명: 한큐 플랜트 \n\n 분류: 개발동기 \n\n###\n\n", "completion": "조경수 거래 금액이 높지만, 안전거래 시스템 부재로 인해 사기 건수가 굉장히 높음 => 안전거래 시스템을 도입한 조경수 거래 플랫폼 고도화"}
+{"prompt": "타입: 참여한 회사 프로젝트 \n\n프로젝트명: 한큐 플랜트 \n\n 분류: 활용스택 \n\n###\n\n", "completion": "React, Tailwind, Redux, FastAPI, SQL, AWS lamdba, FCM"}
+{"prompt": "타입: 참여한 회사 프로젝트 \n\n프로젝트명: 한큐 플랜트 \n\n 분류: 무엇을 했는가 \n\n###\n\n", "completion": "기존에 운영되고 있는 플랫폼의 유지보수를 담당 | AWS 비용 절감을 위한 디바운싱 적용 및 람다 호출량 감소 및 DB EC2 이전 | 사용자의 재방문율을 높이기 위해 관심 상품 기능을 도입하고, 관심 상품이 등록되면 등록된 정보를 활용하여 FCM과 SMS 발송 시스템 개발 | AWS 페이로드 제한으로 5MB이상 파일 업로드 불가 문제를 해결하기 위해 Presigned URL 도입 | 네크워트 상황에 따라 이미지 로딩이 오래걸리는 문제를 해결하기 위해 S3에 lambda 트리거를 연결하여 이 지업로드 썸네일, 상세 이미지 용으로 리사이징 되도록 구현"}
+
+
+// IT JUST COUNTER
+{"prompt": "타입: 참여한 개인 프로젝트 \n\n프로젝트명: IT JUST COUNTER \n\n 분류: 간략소개 \n\n###\n\n", "completion": "방문자 수를 기록하고, 다양한 형태(JSON, 이미지)로 내려주는 서비스"}
+{"prompt": "타입: 참여한 개인 프로젝트 \n\n프로젝트명: IT JUST COUNTER \n\n 분류: 소개글 링크 \n\n###\n\n", "completion": "https://www.itjustbong.me/itjustcounter"}
+{"prompt": "타입: 참여한 개인 프로젝트 \n\n프로젝트명: IT JUST COUNTER \n\n 분류: 서비스 링크 \n\n###\n\n", "completion": "https://counter.itjustbong.workers.dev/"}
+{"prompt": "타입: 참여한 개인 프로젝트 \n\n프로젝트명: IT JUST COUNTER \n\n 분류: 참여인원 \n\n###\n\n", "completion": "1인 프로젝트"}
+{"prompt": "타입: 참여한 개인 프로젝트 \n\n프로젝트명: IT JUST COUNTER \n\n 분류: 개발동기 \n\n###\n\n", "completion": "방문자 수를 SVG형태로 내려주는 서비스는 많지만, 데이터 가공의 어려움 존재 => 방문자 수 정보를 JSON 형태로 내려주는 서비스 개발"}
+{"prompt": "타입: 참여한 개인 프로젝트 \n\n프로젝트명: IT JUST COUNTER \n\n 분류: 개발기간 \n\n###\n\n", "completion": "23.05"}
+{"prompt": "타입: 참여한 개인 프로젝트 \n\n프로젝트명: IT JUST COUNTER \n\n 분류: 활용스택 \n\n###\n\n", "completion": "Cloudflare Workers, KV"}
+{"prompt": "타입: 참여한 개인 프로젝트 \n\n프로젝트명: IT JUST COUNTER \n\n 분류: 무엇을 했는가 \n\n###\n\n", "completion": "Cloudflare Wrangler 환경을 활용하여 Workers, KV 개발 및 배포 | 방문자 정보를 total, today로 나누어 JSON과 SVG 형태로 반환하도록 개발 | SVG를 동적으로 생성할 수 있도록 서비스 개발"}
+
+
+// SSUNG DELIVERY
+{"prompt": "타입: 참여한 개인 프로젝트 \n\n프로젝트명: SSUNG DELIVERY (쓩 딜리버리) \n\n 분류: 간략소개 \n\n###\n\n", "completion": "QR코드 기반 새로운 운송장 시스템 및 클라이언트 용 웹"}
+// {"prompt": "타입: 참여한 개인 프로젝트 \n\n프로젝트명: SSUNG DELIVERY (쓩 딜리버리) \n\n 분류: 소개글 링크 \n\n###\n\n", "completion": ""}
+// {"prompt": "타입: 참여한 개인 프로젝트 \n\n프로젝트명: SSUNG DELIVERY (쓩 딜리버리) \n\n 분류: 서비스 링크 \n\n###\n\n", "completion": ""}
+{"prompt": "타입: 참여한 개인 프로젝트 \n\n프로젝트명: SSUNG DELIVERY (쓩 딜리버리) \n\n 분류: 참여인원 \n\n###\n\n", "completion": "FE 2명, BE 2명"}
+{"prompt": "타입: 참여한 개인 프로젝트 \n\n프로젝트명: SSUNG DELIVERY (쓩 딜리버리) \n\n 분류: 개발동기 \n\n###\n\n", "completion": "택배 운송장을 통해 유출되는 개인정보 문제를 위한 솔루션을 제안해보고자 함 => QR코드를 기반으로하여 개인정보 유출을 최소화하는 서비스를 구현 중"}
+{"prompt": "타입: 참여한 개인 프로젝트 \n\n프로젝트명: SSUNG DELIVERY (쓩 딜리버리) \n\n 분류: 개발기간 \n\n###\n\n", "completion": "23.02 ~ 23.06"}
+{"prompt": "타입: 참여한 개인 프로젝트 \n\n프로젝트명: SSUNG DELIVERY (쓩 딜리버리) \n\n 분류: 활용스택 \n\n###\n\n", "completion": "React, Emotion, Figma, Pnpm, Monorepo"}
+{"prompt": "타입: 참여한 개인 프로젝트 \n\n프로젝트명: SSUNG DELIVERY (쓩 딜리버리) \n\n 분류: 무엇을 했는가 \n\n###\n\n", "completion": "구글 솔루션 챌린지 팀장으로 참여 및 1차 제출완료 (23.03.31) | Figma를 활용한 유저, 배송자 클라이언트 디자인 | 3가지의 클라이언트 앱을 효율적으로 개발하기 위해 모노레포 시스템 도입 | 각종 이벤트리스너를 활용하여 사용자 제스쳐에 반응 할 수 있도록 서비스 구현 | 컴포넌트의 확장, 소멸 시 발생하는 과정에 애니메이션을 추가하여 UX 개선 | 모달 관리 간소화를 위한 뷰, 상태를 포함한 useModal 커스텀 훅 구현 | 폼 관리시 이벤트리스너, 값 등의 반복을 단순화한 useForm을 구현하여 DX 개선"}
+
+// 뉴스레터 서비스
+{"prompt": "타입: 참여한 개인 프로젝트 \n\n프로젝트명: 뉴스레터 서비스 \n\n 분류: 간략소개 \n\n###\n\n", "completion": "벨로그 트렌드 글을 이메일로 발송하는 뉴스레터 서비스"}
+{"prompt": "타입: 참여한 개인 프로젝트 \n\n프로젝트명: 뉴스레터 서비스 \n\n 분류: 소개글 링크 \n\n###\n\n", "completion": "https://www.itjustbong.me/news-letter"}
+{"prompt": "타입: 참여한 개인 프로젝트 \n\n프로젝트명: 뉴스레터 서비스 \n\n 분류: 서비스 링크 \n\n###\n\n", "completion": "https://itjustbong.github.io/newsletter-service/"}
+{"prompt": "타입: 참여한 개인 프로젝트 \n\n프로젝트명: 뉴스레터 서비스 \n\n 분류: 참여인원 \n\n###\n\n", "completion": "1인 프로젝트"}
+{"prompt": "타입: 참여한 개인 프로젝트 \n\n프로젝트명: 뉴스레터 서비스 \n\n 분류: 개발동기 \n\n###\n\n", "completion": "바쁜 일상 속에서도 하루에 한번은 개발 트렌드를 파악하고 싶었음 => 벨로그 트렌딩을 메일로 매일 11시에 전송하여, 개발과 관련된 키워드를 상기시킴"}
+{"prompt": "타입: 참여한 개인 프로젝트 \n\n프로젝트명: 뉴스레터 서비스 \n\n 분류: 개발기간 \n\n###\n\n", "completion": "23.02"}
+{"prompt": "타입: 참여한 개인 프로젝트 \n\n프로젝트명: 뉴스레터 서비스 \n\n 분류: 활용스택 \n\n###\n\n", "completion": "HTML, JS, CSS, Supabase, NodeJS, Github Actions, Github Pages"}
+{"prompt": "타입: 참여한 개인 프로젝트 \n\n프로젝트명: 뉴스레터 서비스 \n\n 분류: 무엇을 했는가 \n\n###\n\n", "completion": "벨로그 웹 사이트 스크래핑을 통한 트렌딩 게시글 정보 수집 | 클라이언트에서 Supabase를 활용한 구독자 정보 저장 | Github Pages, Actions를 활용한 서비스 배포 및 운영 | Scheduler 기능을 활용하여 매일 아침 11시에 Actions를 작동시켜 뉴스레터를 메일로 발송하도록 개발"}
+
+// 숭실대학교 LMS 개선 크롬 확장프로그램
+{"prompt": "타입: 참여한 개인 프로젝트 \n\n프로젝트명: 숭실대학교 LMS 개선 크롬 확장프로그램 \n\n 분류: 간략소개 \n\n###\n\n", "completion": "LMS를 개선하는 크롬 확장 프로그램"}
+{"prompt": "타입: 참여한 개인 프로젝트 \n\n프로젝트명: 숭실대학교 LMS 개선 크롬 확장프로그램 \n\n 분류: 소개글 링크 \n\n###\n\n", "completion": "https://www.itjustbong.me/ssu-lms"}
+{"prompt": "타입: 참여한 개인 프로젝트 \n\n프로젝트명: 숭실대학교 LMS 개선 크롬 확장프로그램 \n\n 분류: 서비스 링크 \n\n###\n\n", "completion": "https://chrome.google.com/webstore/detail/lms-tools/hgckkbadbjekgldameanmpblbejmhofl"}
+{"prompt": "타입: 참여한 개인 프로젝트 \n\n프로젝트명: 숭실대학교 LMS 개선 크롬 확장프로그램 \n\n 분류: 참여인원 \n\n###\n\n", "completion": "1인 프로젝트"}
+{"prompt": "타입: 참여한 개인 프로젝트 \n\n프로젝트명: 숭실대학교 LMS 개선 크롬 확장프로그램 \n\n 분류: 개발동기 \n\n###\n\n", "completion": "숭실대 학생들의 LMS의 불편함으로 인한 학습 효율 저하 => 크롬 확장 프로그램을 확장 기능을 통해 주요 문제점 해결"}
+{"prompt": "타입: 참여한 개인 프로젝트 \n\n프로젝트명: 숭실대학교 LMS 개선 크롬 확장프로그램 \n\n 분류: 개발기간 \n\n###\n\n", "completion": "22.11"}
+{"prompt": "타입: 참여한 개인 프로젝트 \n\n프로젝트명: 숭실대학교 LMS 개선 크롬 확장프로그램 \n\n 분류: 활용스택 \n\n###\n\n", "completion": "JS, HTML, CSS, Chrome 확장프로그램"}
+{"prompt": "타입: 참여한 개인 프로젝트 \n\n프로젝트명: 숭실대학교 LMS 개선 크롬 확장프로그램 \n\n 분류: 무엇을 했는가 \n\n###\n\n", "completion": "숭실대학교 재학생 대상으로 홍보 및 누적 200여명의 사용자 확보 | 크롬 개발자도구의 네트워크, 요소, 성능 탭 등을 활용하여 기존 LMS 시스템 분석 후 불편함의 원인 파악 | 크롬 Extension API를 통해 LMS의 돔 조작 및 인증정보 파싱을 통해 LMS의 기존 문제를 해결하고, 추가적인 기능(강의 열기, 자료 다운받기 등)을 개발"}
+
+// Notishare (노티쉐어)
+{"prompt": "타입: 참여한 개인 프로젝트 \n\n프로젝트명: Notishare (노티쉐어) \n\n 분류: 간략소개 \n\n###\n\n", "completion": "안드로이드 기기간 알람을 공유할 수 있는 AOS 앱"}
+{"prompt": "타입: 참여한 개인 프로젝트 \n\n프로젝트명: Notishare (노티쉐어) \n\n 분류: 소개글 링크 \n\n###\n\n", "completion": "https://www.itjustbong.me/notishare"}
+{"prompt": "타입: 참여한 개인 프로젝트 \n\n프로젝트명: Notishare (노티쉐어) \n\n 분류: 참여인원 \n\n###\n\n", "completion": "3인 안드로이드 개발"}
+{"prompt": "타입: 참여한 개인 프로젝트 \n\n프로젝트명: Notishare (노티쉐어) \n\n 분류: 개발동기 \n\n###\n\n", "completion": "애플 생태계에서 제공되는 알람 공유 서비스를 안드로이드 진영에서도 사용하고 싶었음 => AOS, 파이어베이스의 다수 제품군을 활용하여 서비스 구현"}
+{"prompt": "타입: 참여한 개인 프로젝트 \n\n프로젝트명: Notishare (노티쉐어) \n\n 분류: 개발기간 \n\n###\n\n", "completion": "22.09 ~ 22.12"}
+{"prompt": "타입: 참여한 개인 프로젝트 \n\n프로젝트명: Notishare (노티쉐어) \n\n 분류: 활용스택 \n\n###\n\n", "completion": "Android, Firebase Cloud Store, Functions, Messaging"}
+{"prompt": "타입: 참여한 개인 프로젝트 \n\n프로젝트명: Notishare (노티쉐어) \n\n 분류: 무엇을 했는가 \n\n###\n\n", "completion": "사용자인터페이스 수업의 프로젝트의 팀장으로 참여하여 일정 관리, 업무 분배, 서류 작업 등을 담당 및 22-2학기 50여개의 프로젝트 중 1위 | FB의 Messaging, Functions, Store 제품을 활용하여 서버리스 백엔드 구축 | BroadCast Receiver에서 NotificationListenerService API를 활용하여 알람을 파싱 | Foreground Service를 활용하여 백그라운드 상태에서 앱이 강제종료되는 문제를 해결"}
+
+// 회사 - 올바름
+{"prompt": "타입: 다녔던 회사 \n\n회사명: 올바름\n\n 분류:재직기간 \n\n###\n\n", "completion": "22.02 ~ 23.02"}
+{"prompt": "타입: 다녔던 회사 \n\n회사명: 올바름\n\n 분류:무엇을 했는가 \n\n###\n\n", "completion": "조경수 플랫폼 유지보수 담당 => 기존 서비스의 고도화 프로젝트 담당 (관심 상품 등록 등) | 비용을 낮추기 위한 여러 작업 진행 (RDS → EC2 이전 등)"}
+{"prompt": "타입: 다녔던 회사 \n\n회사명: 올바름\n\n 분류:무엇을 했는가 \n\n###\n\n", "completion": "마케팅 플랫폼 프로젝트 리드 => 개발을 비롯한 기획, 디자인, 지원사업 등 전체 프로젝트 담당 | Sendee를 통해 재구매율 10% → 25%로 향상"}
+
+// 회사 - 소셜 그라운드
+{"prompt": "타입: 다녔던 회사 \n\n회사명: 소셜 그라운드\n\n 분류:재직기간 \n\n###\n\n", "completion": "21.07 ~ 22.01"}
+{"prompt": "타입: 다녔던 회사 \n\n회사명: 소셜 그라운드\n\n 분류:무엇을 했는가 \n\n###\n\n", "completion": "공동창업자 및 사내이사 => 회사 운영을 위한 지원사업, 외주 수주 등 다양한 활동 | 지도 기반 광고 서비스에 대한 특허 출원"}
+{"prompt": "타입: 다녔던 회사 \n\n회사명: 소셜 그라운드\n\n 분류:무엇을 했는가 \n\n###\n\n", "completion": "개발팀 리드 => 팀 기획자, 외주 디자인 회사 등과 소통하며 개발팀 운영 | 각종 지원사업 수료를 위한 프로젝트 일정에 맞춘 개발 진행"}
+
+// 회사 - 밀레코리아
+{"prompt": "타입: 다녔던 회사 \n\n회사명: 밀레코리아\n\n 분류:재직기간 \n\n###\n\n", "completion": "20.12 ~ 21.06"}
+{"prompt": "타입: 다녔던 회사 \n\n회사명: 밀레코리아\n\n 분류:무엇을 했는가 \n\n###\n\n", "completion": "업무 효울 개선 프로젝트 담당 => 사내 시스템의 비효율성을 자동화 프로그램을 통해 개선 | 업무 정산, 최저가 스크래핑, 재고 관리 자동화 프로그램 개발"}
+{"prompt": "타입: 다녔던 회사 \n\n회사명: 밀레코리아\n\n 분류:무엇을 했는가 \n\n###\n\n", "completion": "패밀리몰, CS 상담 프로젝트 담당 => CS 플랫폼 개발 및 2만명 이상 상담 진행 완료 | 웹빌더를 활용한 패밀리몰 구축 및 3억원 이상 매출 발생"}
+
+// 학업
+{"prompt": "타입: 학교 \n\n회사명: 숭실대학교\n\n 분류:기간 \n\n###\n\n", "completion": "17.03 ~ 24.02"}
+{"prompt": "타입: 학교 \n\n회사명: 숭실대학교\n\n 분류:학과 \n\n###\n\n", "completion": "AI융합학부 (구 스마트시스템소프트웨어학과)"}
+{"prompt": "타입: 학교 \n\n회사명: 숭실대학교\n\n 분류:학점 (GPA) \n\n###\n\n", "completion": "전공 GPA 4.19 (2023 기준)"}
+{"prompt": "타입: 학교 \n\n회사명: 숭실대학교\n\n 분류:장학금 \n\n###\n\n", "completion": "창업역량 장학금, 성적 우수 장학금, 성적 향상 장학금, 비전 장학금"}
+
+// 동아리 GDSC
+{"prompt": "타입: 동아리 \n\n회사명: GDSC(Google Developer Student Clubs)\n\n 분류:기간 \n\n###\n\n", "completion": "22.09 ~ 진행 중"}
+{"prompt": "타입: 동아리 \n\n회사명: GDSC(Google Developer Student Clubs)\n\n 분류:무엇을 했는가 \n\n###\n\n", "completion": "프레임워크 없는(있는) 프론트엔드 스터디 => 다양한 FE 스택을 활용하여 투두앱을 만들고 세미나 및 코드잼 진행 | 각 FE 스택 별 장단점 파악 및 적절한 스택 선택에 대한 논의 | 주요 패키지매니저 각각을 활용해보고 장단점 파악"}
+{"prompt": "타입: 동아리 \n\n회사명: GDSC(Google Developer Student Clubs)\n\n 분류:무엇을 했는가 \n\n###\n\n", "completion": "세상을 바꾸는 프론트엔드 스터디 => 앞으로의 프론트엔드에 대해 이야기 나누고 인사이트 공유 | 각자가 경험했던 어려움, 고민을 공유하고 의견을 나눔"}
+{"prompt": "타입: 동아리 \n\n회사명: GDSC(Google Developer Student Clubs)\n\n 분류:무엇을 했는가 \n\n###\n\n", "completion": "구글 솔루션 챌린지 프로젝트 => SSUNG DELIVERY 프로젝트 진행"}
+
+// 동아리 UMC
+{"prompt": "타입: 동아리 \n\n회사명: UMC\n\n 분류:기간 \n\n###\n\n", "completion": "23.03 ~ 진행 중"}
+{"prompt": "타입: 동아리 \n\n회사명: UMC\n\n 분류:무엇을 했는가 \n\n###\n\n", "completion": "iOS 스터디 => 새롭게 등장할 폼팩터의 앱 개발을 위한 iOS 스터디 진행 중 | Storyboard 기반의 앱 스터디 진행 중"}
+
+// 그 외 경험 - 아티클
+{"prompt": "타입: 아티클 \n\n제목: 2021년 캠퍼스 CEO 육성사업 제2회 캡스톤어워즈 시상식 열려\n\n 분류:링크 \n\n###\n\n", "completion": "https://scatch.ssu.ac.kr/%EB%89%B4%EC%8A%A4%EC%84%BC%ED%84%B0/%EC%A3%BC%EC%9A%94%EB%89%B4%EC%8A%A4/page/2/?slug=2021%EB%85%84-%EC%BA%A0%ED%8D%BC%EC%8A%A4-ceo-%EC%9C%A1%EC%84%B1%EC%82%AC%EC%97%85-%EC%A0%9C2%ED%9A%8C-%EC%BA%A1%EC%8A%A4%ED%86%A4%EC%96%B4%EC%9B%8C%EC%A6%88-%EC%8B%9C%EC%83%81%EC%8B%9D-%EC%97%B4&f&keyword"
+{"prompt": "타입: 아티클 \n\n제목: ‘봉화 토박이’가 선보인 식물거래 플랫폼 ‘한큐 플랜트’... 편리성·안전성 높였다\n\n 분류:링크 \n\n###\n\n", "completion": "http://m.segyebiz.com/newsView/20211221508589"
+{"prompt": "타입: 아티클 \n\n제목: 누가 스마트캠퍼스 쓰라고 칼들고 협박함? (feat. 크롬 개발자도구, 크롬 확장프로그램) \n\n 분류:링크 \n\n###\n\n", "completion": "https://www.instagram.com/p/ClAzro_LJQY/?utm_source=ig_web_copy_link"}
+{"prompt": "타입: 아티클 \n\n제목: [2021 숭실대 스타트업 CEO] ESG 관련 역량과 실무 능력을 가르치는 교육 스타트업 '소셜그라운드' \n\n 분류:링크 \n\n###\n\n", "completion": "https://www.hankyung.com/economy/article/202112070608i"}
+{"prompt": "타입: 아티클 \n\n제목: [캠퍼스CEO 육성사업] 우수 수료생 소개_it`s \n\n 분류:링크 \n\n###\n\n", "completion": "https://www.youtube.com/watch?v=YW3-5ZNnlGo"}
+
+// 수상
+{"prompt": "타입: 수상 내역 \n\n###\n\n", "completion": "메이커톤 위드캠프 1위 | 메이커페어 2018 전시회 참여 | 교내 경진대회 장려상 | 두드림 프로그램 우수상 | 캠퍼스 CEO 캡스톤 어워즈 종합대상 | 숭실대학교 Pre 스타트업 선정 2021, 2022, 2023 (3회) | 2021 예비창업패키지 선정 | 스타트업 in 동작 선정"}
+
+// 특허
+{"prompt": "타입: 출원 특허 \n\n###\n\n", "completion": "Method For Providing Local Advertisement Including Advertiser Business Place | Mixed Beverage Manufacturing and Ordering Service Delivery System | Beverage Dispensing System "}
+
+// 오픈소스
+{"prompt": "타입: 오픈소스 \n\n 레포: morethan-log \n\n###\n\n", "completion": "morethanlog 를 활용한 사이트 제작, 이슈 및 PR 컨트리뷰트 진행"}
