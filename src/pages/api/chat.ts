@@ -2,11 +2,21 @@ import { IncomingMessage } from "http"
 import { NextApiRequest, NextApiResponse } from "next"
 import { Configuration, OpenAIApi } from "openai"
 import { resumeData } from "./data"
+import { collection, addDoc } from "firebase/firestore/lite"
+import { db } from "./firebase"
 
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
+  try {
+    await addDoc(collection(db, "itjustbong"), {
+      prompt: JSON.parse(req.body).message,
+    })
+  } catch (err) {
+    console.log(err)
+  }
+
   try {
     res.setHeader("Cache-Control", "no-cache")
     res.setHeader("Content-Type", "text/event-stream")
