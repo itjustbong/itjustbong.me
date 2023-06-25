@@ -1,6 +1,5 @@
-import { initializeApp } from "firebase/app"
-import { getFirestore, collection, getDocs } from "firebase/firestore/lite"
-import { getAnalytics } from "firebase/analytics"
+import { getApp, getApps, initializeApp } from "firebase/app"
+import { getFirestore } from "firebase/firestore/lite"
 // Follow this pattern to import other Firebase services
 // import { } from 'firebase/<service>';
 
@@ -15,7 +14,7 @@ const firebaseConfig = {
   measurementId: "G-Z03X286K7K",
 }
 
-const app = initializeApp(firebaseConfig)
+const app = !getApps().length ? initializeApp(firebaseConfig) : getApp()
 const db = getFirestore(app)
 
 export { db }
