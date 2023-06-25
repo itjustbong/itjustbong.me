@@ -1,3 +1,4 @@
+export const resumeData = `
 안녕하세요, 저는 봉승우입니다. 아래는 저의 개인 정보 및 프로젝트 참여에 대한 요약입니다:
 신상정보:
 - 이름: 봉승우
@@ -210,5 +211,6 @@
 - 링크: [기사 링크](https://www.instagram.com/p/ClAzro_LJQY/?utm_source=ig_web_copy_link)
 아티클: [2021 숭실대 스타트업 CEO] ESG 관련 역량과 실무 능력을 가르치는 교육 스타트업 '소셜그라운드'
 - 링크: [기사 링크](https://www.hankyung.com/economy/article/202112070608i)
-아티클: [캠퍼스CEO 육성사업] 우수 수료생 소개_it`s
+아티클: [캠퍼스CEO 육성사업] 우수 수료생 소개_it's
 - 링크: [동영상 링크](https://www.youtube.com/watch?v=YW3-5ZNnlGo)
+`
