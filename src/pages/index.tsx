@@ -30,6 +30,7 @@ const IndexPage: NextPageWithLayout = () => {
           overflow: scroll;
           scroll-behavior: smooth;
           scroll-snap-type: x mandatory;
+          gap: 1rem;
           ::-webkit-scrollbar {
             display: none;
           }
@@ -59,8 +60,34 @@ const IndexPage: NextPageWithLayout = () => {
           </div>
         </PageWrapper>
 
-        <PageWrapper>반가워1</PageWrapper>
-        <PageWrapper>반가워2</PageWrapper>
+        <PageWrapper>
+          <div
+            className={css`
+              grid-area: 1/1/7/7;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              background-color: rgba(255, 255, 255, 0.25);
+              border-radius: 0.5rem;
+            `}
+          >
+            준비 중...
+          </div>
+        </PageWrapper>
+        <PageWrapper>
+          <div
+            className={css`
+              grid-area: 1/1/7/7;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              background-color: rgba(255, 255, 255, 0.25);
+              border-radius: 0.5rem;
+            `}
+          >
+            준비 중...
+          </div>
+        </PageWrapper>
       </div>
       <DotWrapper>
         <Dot />
