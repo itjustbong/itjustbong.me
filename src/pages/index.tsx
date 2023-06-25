@@ -7,6 +7,12 @@ import ChatBox from "../components/Widget/ChatBox"
 import NameCard from "../components/Widget/NameCard"
 import BottomBar from "../components/BottomBar"
 import IntroCard from "../components/Widget/IntroCard"
+import {
+  AiOutlineDesktop,
+  AiOutlineHome,
+  AiOutlineLink,
+  AiOutlineMenu,
+} from "react-icons/ai"
 
 const IndexPage: NextPageWithLayout = () => {
   return (
@@ -62,6 +68,22 @@ const IndexPage: NextPageWithLayout = () => {
         <Dot />
       </DotWrapper>
       <BottomBar />
+      <SideToolBar className="hidden md:flex">
+        <ToolWrapper className="bg-[rgba(255,255,255,0.5)]">
+          <AiOutlineHome size="1.25rem" />
+        </ToolWrapper>
+        <ToolWrapper>
+          <AiOutlineMenu size="1.25rem" />
+        </ToolWrapper>
+
+        <ToolWrapper>
+          <AiOutlineLink size="1.25rem" />
+        </ToolWrapper>
+
+        <ToolWrapper>
+          <AiOutlineDesktop size="1.25rem" />
+        </ToolWrapper>
+      </SideToolBar>
     </Cotainer>
   )
 }
@@ -82,6 +104,32 @@ IndexPage.getLayout = function getlayout(page) {
 }
 
 export default IndexPage
+
+const ToolWrapper = styled.div`
+  color: white;
+  margin: 0 auto;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
+
+const SideToolBar = styled.div`
+  padding: 0.5rem 0;
+  position: absolute;
+  left: 2rem;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  height: fit-content;
+  width: 3rem;
+  border-radius: 3rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  flex-direction: column;
+  gap: 1rem;
+`
 
 const Dot = styled.div`
   width: 8px;
