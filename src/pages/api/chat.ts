@@ -1,6 +1,7 @@
 import { IncomingMessage } from "http"
 import { NextApiRequest, NextApiResponse } from "next"
 import { Configuration, OpenAIApi } from "openai"
+import { resumeData } from "./data"
 
 export default async function handler(
   req: NextApiRequest,
@@ -21,8 +22,9 @@ export default async function handler(
 
     const response = openai.createChatCompletion(
       {
-        model: "gpt-3.5-turbo",
+        model: "gpt-3.5-turbo-16k",
         messages: [
+          { role: "system", content: resumeData },
           {
             role: "user",
             content: JSON.parse(req.body).message,
