@@ -8,34 +8,29 @@ const ChatBox = () => {
   const [query, setQuery] = useState<string>("")
   const [response, setResponse] = useState<string>("")
 
-  const submitQuery = useCallback(() => {
-    // console.log(query)
-
-    const eventSource = new EventSource("/api/chat")
-    eventSource.onopen = () => {
-      console.log("connected")
-    }
-
-    eventSource.onmessage = (e) => {
-      if (e.data !== "undefined") setResponse((prev) => prev + e.data)
-    }
-
-    eventSource.onerror = (e: any) => {
-      eventSource.close()
-
-      if (e.error) {
-        // 에러 발생 시 할 일
-        console.log(e.error)
-      }
-
-      if (e.target.readyState === EventSource.CLOSED) {
-        // 종료 시 할 일
-        console.log("finished")
+  const submitQuery = useCallback(async () => {
+    const response = await fetch("/api/chat", {
+      method: "POST",
+      headers: { "Content-Type": "text/event-stream" },
+      body: JSON.stringify({ message: query }),
+    })
+    const reader = (response.body as unknown as ReadableStream<Uint8Array>)
+      .pipeThrough(new TextDecoderStream())
+      .getReader()
+    while (true) {
+      const { value, done } = await reader.read()
+      if (done) break
+      const lines = value.toString().split("\n\n")
+      for (const line of lines) {
+        if (line.startsWith("data:")) {
+          const message = line.replace("data: ", "")
+          if (message === "undefined") break
+          setResponse((prev) => prev + message)
+        }
       }
     }
-
     setQuery("")
-  }, [query, response])
+  }, [query])
 
   return (
     <Container>
