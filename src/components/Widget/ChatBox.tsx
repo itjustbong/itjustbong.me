@@ -6,11 +6,36 @@ import ChatBubble from "./ChatBox.Bubble"
 
 const ChatBox = () => {
   const [query, setQuery] = useState<string>("")
+  const [response, setResponse] = useState<string>("")
 
   const submitQuery = useCallback(() => {
-    console.log(query)
+    // console.log(query)
+
+    const eventSource = new EventSource("/api/chat")
+    eventSource.onopen = () => {
+      console.log("connected")
+    }
+
+    eventSource.onmessage = (e) => {
+      if (e.data !== "undefined") setResponse((prev) => prev + e.data)
+    }
+
+    eventSource.onerror = (e: any) => {
+      eventSource.close()
+
+      if (e.error) {
+        // 에러 발생 시 할 일
+        console.log(e.error)
+      }
+
+      if (e.target.readyState === EventSource.CLOSED) {
+        // 종료 시 할 일
+        console.log("finished")
+      }
+    }
+
     setQuery("")
-  }, [query])
+  }, [query, response])
 
   return (
     <Container>
@@ -47,7 +72,7 @@ const ChatBox = () => {
           <div className="h-5" />
           <div className="text-gray-500">저에 대해 궁금하신 것이 있나요?</div>
         </ChatBubble>
-        <ChatBubble type="client">그래 반가워</ChatBubble>
+        <ChatBubble type="client">{response}</ChatBubble>
       </div>
     </Container>
   )
