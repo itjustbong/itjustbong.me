@@ -23,6 +23,7 @@ const ChatBox = () => {
   }, [currResponse, loading])
 
   const submitQuery = useCallback(async () => {
+    if (!currQuery) return
     setHistory((prev) => [...prev, { type: "client", message: currQuery }])
     setLoading(true)
 
@@ -100,6 +101,11 @@ const ChatBox = () => {
           className="w-5/6 rounded-md h-10 border-none outline-none bg-[rgba(255,255,255,0.5)] focus:bg-white transition-all duration-300 px-2 text-gray-600 focus:text-gray-900"
           value={loading ? "답변을 기다리는 중..." : currQuery}
           onChange={(e) => setCurrQuery(e.target.value)}
+          onKeyDown={(e) => {
+            if (e.key === "Enter") {
+              submitQuery()
+            }
+          }}
           disabled={loading}
         />
         <AiOutlineSearch
