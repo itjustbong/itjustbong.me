@@ -5,6 +5,10 @@ import { resumeData } from "./data"
 import { collection, addDoc } from "firebase/firestore/lite"
 import { db } from "./firebase"
 
+export const config = {
+  runtime: "edge",
+}
+
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
