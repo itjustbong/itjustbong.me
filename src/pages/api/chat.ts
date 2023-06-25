@@ -18,10 +18,12 @@ export default async function handler(
   }
 
   try {
-    res.setHeader("Cache-Control", "no-cache")
-    res.setHeader("Content-Type", "text/event-stream")
+    res.setHeader("Access-Control-Allow-Origin", "*")
+    res.setHeader("Cache-Control", "no-cache, no-transform")
+    res.setHeader("Content-Type", "text/event-stream;charset=utf-8")
     res.setHeader("Access-Control-Allow-Origin", "*")
     res.setHeader("Connection", "keep-alive")
+    res.setHeader("X-Accel-Buffering", "no")
     res.setHeader("Content-Encoding", "none")
     res.flushHeaders()
 
