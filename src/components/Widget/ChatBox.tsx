@@ -1,12 +1,13 @@
 import styled from "@emotion/styled"
 import Image from "next/image"
-import { useCallback, useState } from "react"
+import { useCallback, useRef, useState } from "react"
 import { AiOutlineSearch } from "react-icons/ai"
 import ChatBubble from "./ChatBox.Bubble"
 
 const ChatBox = () => {
   const [query, setQuery] = useState<string>("")
   const [response, setResponse] = useState<string>("")
+  const ref = useRef<HTMLDivElement>(null)
 
   const submitQuery = useCallback(async () => {
     const response = await fetch("/api/chat", {
@@ -26,6 +27,8 @@ const ChatBox = () => {
           const message = line.replace("data: ", "")
           if (message === "undefined") break
           setResponse((prev) => prev + message)
+          const $ = ref.current!
+          $.scrollTop = $.scrollHeight
         }
       }
     }
@@ -34,7 +37,7 @@ const ChatBox = () => {
 
   return (
     <Container>
-      <BubbleWrapper>
+      <BubbleWrapper ref={ref}>
         <div className="flex items-center gap-4 ">
           <Image
             src="/images/chat-bubble.png"
