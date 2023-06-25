@@ -12,7 +12,6 @@ export default async function handler(
     res.setHeader("Access-Control-Allow-Origin", "*")
     res.setHeader("Connection", "keep-alive")
     res.setHeader("Content-Encoding", "none")
-
     res.flushHeaders()
 
     const configuration = new Configuration({
@@ -26,7 +25,7 @@ export default async function handler(
         messages: [
           {
             role: "user",
-            content: "안녕 반가워",
+            content: JSON.parse(req.body).message,
           },
         ],
         max_tokens: 500,
