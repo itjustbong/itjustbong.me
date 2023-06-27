@@ -10,6 +10,12 @@ const ChatBox = () => {
   const { messages, input, handleInputChange, handleSubmit, isLoading } =
     useChat()
 
+  useEffect(() => {
+    if (!ref?.current) return
+    const $ = ref.current
+    $.scrollTop = $.scrollHeight
+  }, [messages])
+
   return (
     <Container>
       <BubbleWrapper ref={ref}>
