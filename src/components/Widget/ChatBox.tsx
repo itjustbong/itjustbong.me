@@ -62,7 +62,7 @@ const ChatBox = () => {
           disabled={isLoading}
         />
         <button type="submit" className="w-1/6 h-6 text-white">
-          <AiOutlineSearch className="w-1/6 h-6 text-white" />
+          <AiOutlineSearch className="w-full h-full text-white" />
         </button>
       </form>
     </Container>
