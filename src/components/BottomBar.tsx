@@ -31,8 +31,8 @@ const BottomBar = () => {
         >
           <Image
             src="/images/github.svg"
-            width="24px"
-            height="24px"
+            width="24"
+            height="24"
             alt="github-itjustbong"
           />
           <div
@@ -55,8 +55,8 @@ const BottomBar = () => {
       >
         <Image
           src="/images/instagram.svg"
-          width="48px"
-          height="48px"
+          width="48"
+          height="48"
           alt="github-itjustbong"
         />
       </Link>
@@ -74,8 +74,8 @@ const BottomBar = () => {
       >
         <Image
           src="/images/linkedin.png"
-          width="48px"
-          height="48px"
+          width="48"
+          height="48"
           alt="github-itjustbong"
         />
       </Link>
@@ -89,8 +89,8 @@ const BottomBar = () => {
       >
         <Image
           src="/images/gmail.png"
-          width="48px"
-          height="38px"
+          width="48"
+          height="38"
           alt="github-itjustbong"
         />
       </Link>

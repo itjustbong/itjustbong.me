@@ -14,49 +14,47 @@ const PostCard: React.FC<Props> = ({ post }) => {
   }
   return (
     <Link href={`/${post.slug}`}>
-      <a>
-        <article
-          key={post.id}
-          className="overflow-hidden mb-6 md:mb-8 rounded-md bg-white dark:bg-zinc-700 hover:shadow-lg transition-shadow lg:min-h-[420px]"
-        >
-          {post.thumbnail && (
-            <div className="relative w-full pb-[66%] lg:pb-[50%] bg-gray-200 dark:bg-zinc-700 ">
-              <Image
-                src={post.thumbnail}
-                className="object-cover"
-                layout="fill"
-                alt={post.title}
-              />
-            </div>
-          )}
-          <div className="p-4">
-            <header className="flex flex-col justify-between md:flex-row md:items-baseline">
-              <h2 className="text-lg md:text-xl font-medium mb-2 cursor-pointer text-black dark:text-gray-100">
-                {post.title}
-              </h2>
-            </header>
-            <div className="flex items-center gap-2 mb-4">
-              {/* <div className="text-sm text-gray-500 dark:text-gray-400 md:ml-0">
+      <article
+        key={post.id}
+        className="overflow-hidden mb-6 md:mb-8 rounded-md bg-white dark:bg-zinc-700 hover:shadow-lg transition-shadow lg:min-h-[420px]"
+      >
+        {post.thumbnail && (
+          <div className="relative w-full pb-[66%] lg:pb-[50%] bg-gray-200 dark:bg-zinc-700 ">
+            <Image
+              src={post.thumbnail}
+              className="object-cover"
+              layout="fill"
+              alt={post.title}
+            />
+          </div>
+        )}
+        <div className="p-4">
+          <header className="flex flex-col justify-between md:flex-row md:items-baseline">
+            <h2 className="text-lg md:text-xl font-medium mb-2 cursor-pointer text-black dark:text-gray-100">
+              {post.title}
+            </h2>
+          </header>
+          <div className="flex items-center gap-2 mb-4">
+            {/* <div className="text-sm text-gray-500 dark:text-gray-400 md:ml-0">
                 {formatDate(
                   post?.date?.start_date || post.createdTime,
                   CONFIG.lang
                 )}
               </div> */}
-            </div>
-            <main className="mb-4">
-              <p className="block leading-8 text-gray-700 dark:text-gray-300">
-                {post.summary}
-              </p>
-            </main>
-            <div className="flex gap-2">
-              {post.tags &&
-                post.tags.map((tag: string, idx: number) => (
-                  <Tag key={idx}>{tag}</Tag>
-                ))}
-            </div>
           </div>
-        </article>
-      </a>
+          <main className="mb-4">
+            <p className="block leading-8 text-gray-700 dark:text-gray-300">
+              {post.summary}
+            </p>
+          </main>
+          <div className="flex gap-2">
+            {post.tags &&
+              post.tags.map((tag: string, idx: number) => (
+                <Tag key={idx}>{tag}</Tag>
+              ))}
+          </div>
+        </div>
+      </article>
     </Link>
   )
 }

@@ -1,3 +1,5 @@
+"use client"
+
 import Layout from "@components/Layout"
 import CONFIG from "../../site.config"
 import { NextPageWithLayout } from "./_app"

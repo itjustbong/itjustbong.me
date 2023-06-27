@@ -8,8 +8,8 @@ const NameCard = () => {
       <div>
         <Image
           src="/images/봉승우 증명사진.jpeg"
-          height="84px"
-          width="84px"
+          height="84"
+          width="84"
           alt="봉승우 증명사진"
           className={css`
             border-radius: 100%;
