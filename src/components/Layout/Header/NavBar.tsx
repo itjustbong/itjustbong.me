@@ -20,9 +20,7 @@ const NavBar: React.FC = () => {
               "font-bold underline underline-offset-8"
             }`}
           >
-            <Link href={link.to}>
-              <a>{link.name}</a>
-            </Link>
+            <Link href={link.to}>{link.name}</Link>
           </li>
         ))}
       </ul>
