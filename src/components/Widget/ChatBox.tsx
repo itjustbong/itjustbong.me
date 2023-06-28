@@ -23,6 +23,7 @@ const ChatBox = () => {
     handleSubmit,
     isLoading,
     append,
+    stop,
   } = useChat()
 
   useEffect(() => {
@@ -95,9 +96,15 @@ const ChatBox = () => {
           onChange={handleInputChange}
           disabled={isLoading}
         />
-        <button type="submit" className="w-1/6 h-6 text-white">
-          <AiOutlineSearch className="w-full h-full text-white" />
-        </button>
+        {isLoading ? (
+          <div className="cursor-pointer w-1/6 h-6" onClick={stop}>
+            <BsStopCircle className="w-full h-full text-red-400 hover:text-red-500" />
+          </div>
+        ) : (
+          <button type="submit" className="w-1/6 h-6 text-white">
+            <AiOutlineSearch className="w-full h-full text-white" />
+          </button>
+        )}
       </form>
     </Container>
   )
