@@ -22,14 +22,14 @@ const ChatBox = () => {
         <div className="flex items-center gap-4 ">
           <Image
             src="/images/chat-bubble.png"
-            height="48"
-            width="48"
+            height="24"
+            width="24"
             alt="chat-bubble"
           />
           <div className="text-white">채팅으로 물어보세요</div>
         </div>
 
-        <div className="h-5" />
+        <div className="h-3" />
 
         <div className="py-2">
           <ChatBubble type="server">

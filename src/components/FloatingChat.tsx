@@ -58,7 +58,7 @@ const ChatCloseBtn = styled.div`
   position: absolute;
   z-index: 12;
   color: white;
-  top: 1rem;
+  top: 0.75rem;
   right: 1rem;
   size: 4rem;
 `
