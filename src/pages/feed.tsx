@@ -4,6 +4,7 @@ import Feed from "@containers/Feed"
 import CONFIG from "../../site.config"
 import { NextPageWithLayout } from "./_app"
 import { TPosts, TTags } from "../types"
+import FloatingChat from "../components/FloatingChat"
 
 export async function getStaticProps() {
   try {
@@ -45,6 +46,7 @@ FeedPage.getLayout = function getlayout(page) {
       }}
     >
       {page}
+      <FloatingChat />
     </Layout>
   )
 }
