@@ -1,20 +1,20 @@
 "use client"
 
 import Layout from "@components/Layout"
-import CONFIG from "../../site.config"
-import { NextPageWithLayout } from "./_app"
-import styled from "@emotion/styled"
 import { css } from "@emotion/css"
-import ChatBox from "../components/Widget/ChatBox"
-import NameCard from "../components/Widget/NameCard"
-import BottomBar from "../components/BottomBar"
-import IntroCard from "../components/Widget/IntroCard"
+import styled from "@emotion/styled"
 import {
   AiOutlineDesktop,
   AiOutlineHome,
   AiOutlineLink,
   AiOutlineMenu,
 } from "react-icons/ai"
+import CONFIG from "../../site.config"
+import BottomBar from "../components/BottomBar"
+import ChatBox from "../components/Widget/ChatBox"
+import IntroCard from "../components/Widget/IntroCard"
+import NameCard from "../components/Widget/NameCard"
+import { NextPageWithLayout } from "./_app"
 
 const IndexPage: NextPageWithLayout = () => {
   return (

@@ -1,5 +1,5 @@
-import { Configuration, OpenAIApi } from "openai-edge"
 import { OpenAIStream, StreamingTextResponse } from "ai"
+import { Configuration, OpenAIApi } from "openai-edge"
 import { resumeData } from "./data"
 
 const config = new Configuration({
