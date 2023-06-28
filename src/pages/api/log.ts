@@ -13,7 +13,7 @@ export default async function handler(
     })
   } catch (err) {
     console.log(err)
+  } finally {
+    res.status(200).json({ success: "done" })
   }
-
-  res.status(200).json({ name: "John Doe" })
 }
