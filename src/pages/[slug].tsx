@@ -5,6 +5,7 @@ import CONFIG from "../../site.config"
 import { NextPageWithLayout } from "./_app"
 import { TPost } from "../types"
 import CustomError from "../containers/CustomError"
+import FloatingChat from "../components/FloatingChat"
 
 export async function getStaticPaths() {
   const posts = await getPosts()
@@ -80,6 +81,7 @@ DetailPage.getLayout = function getlayout(page) {
   return (
     <Layout metaConfig={getMetaConfig()} fullWidth={page.props.post?.fullWidth}>
       {page}
+      <FloatingChat />
     </Layout>
   )
 }
