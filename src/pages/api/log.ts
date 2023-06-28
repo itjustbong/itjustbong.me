@@ -1,10 +1,7 @@
 import { prisma } from "@/src/libs/db"
 import { NextApiRequest, NextApiResponse } from "next"
 
-export default async function handler(
-  req: NextApiRequest,
-  res: NextApiResponse
-) {
+export default async function POST(req: NextApiRequest, res: NextApiResponse) {
   const { body } = req
 
   try {
@@ -14,6 +11,6 @@ export default async function handler(
   } catch (err) {
     console.log(err)
   } finally {
-    res.status(200).json({ success: "done" })
+    res.json({ success: "done" })
   }
 }
