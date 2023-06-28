@@ -22,7 +22,7 @@
     "ai": "^2.1.8",
     "axios": ">=0.21.1",
     "feed": "^4.2.2",
-    "mermaid": "^9.3.0",
+    "mermaid": "~9.3.0",
     "next": "^13.4.7",
     "notion-client": "^4.10.0",
     "notion-utils": "^4.10.0",
