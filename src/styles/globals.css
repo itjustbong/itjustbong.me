@@ -34,6 +34,18 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
+@keyframes auto-scroll-x {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(-4rem);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
 ::selection {
   background: rgba(45, 170, 219, 0.3);
 }

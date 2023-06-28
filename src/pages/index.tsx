@@ -205,4 +205,5 @@ const Cotainer = styled.div`
   border-radius: 0.375rem;
   height: 85vh;
   gap: 1rem;
+  min-height: 640px;
 `
