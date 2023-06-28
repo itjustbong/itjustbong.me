@@ -1,9 +1,27 @@
 import styled from "@emotion/styled"
 import Image from "next/image"
+import { useEffect, useRef } from "react"
 
 const FloatingChat = () => {
+  const ref = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    const shrinkTimeout = setTimeout(() => {
+      if (!ref.current) return
+      const $ = ref.current
+      $.style.width = "3.5rem"
+    }, 2500)
+
+    return () => {
+      clearTimeout(shrinkTimeout)
+    }
+  }, [])
+
   return (
-    <Container>
+    <Container
+      ref={ref}
+      className="shadow-lg transition-all duration-300 overflow-hidden w-[13.5rem] hover:!w-[13.5rem]"
+    >
       <Image
         src={"/images/chat-bubble.png"}
         width={24}
@@ -29,4 +47,7 @@ const Container = styled.div`
   border-radius: 1rem;
   color: white;
   background-size: 200% 200%;
+  animation: gradient 7.5s ease infinite;
+  transition: all ease 1500ms;
+  cursor: pointer;
 `
