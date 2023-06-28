@@ -2,13 +2,29 @@ import styled from "@emotion/styled"
 import Image from "next/image"
 import { useEffect, useRef } from "react"
 import { AiOutlineSearch } from "react-icons/ai"
+import { BsStopCircle } from "react-icons/bs"
 import ChatBubble from "./ChatBox.Bubble"
 import { useChat } from "ai/react"
 
+const 질문들 = [
+  "너는 어떤 사람이야?",
+  "너가 진행한 프로젝트를 간략히 소개해줘",
+  "너의 학업은 어때?",
+  "가장 어려웠던 프로젝트는 뭐였어?",
+  "어떤 특허를 가지고 있어?",
+]
+
 const ChatBox = () => {
   const ref = useRef<HTMLDivElement>(null)
-  const { messages, input, handleInputChange, handleSubmit, isLoading } =
-    useChat()
+  const {
+    messages,
+    input,
+    handleInputChange,
+    handleSubmit,
+    isLoading,
+    append,
+    stop,
+  } = useChat()
 
   useEffect(() => {
     if (!ref?.current) return
@@ -40,6 +56,25 @@ const ChatBox = () => {
             <div className="h-5" />
             <div className="text-gray-500">저에 대해 궁금하신 것이 있나요?</div>
           </ChatBubble>
+
+          <div>
+            <div className="flex flex-row overflow-scroll scrollbar-hide cursor-pointer">
+              {질문들.map((질문) => (
+                <div
+                  key={질문}
+                  className="flex-shrink-0 px-2 text-slate-100 underline underline-offset-4 text-sm"
+                  onClick={() => {
+                    append({ role: "user", content: 질문 })
+                  }}
+                >
+                  {질문}
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="h-3" />
+
           {messages.map((hist, idx) => (
             <ChatBubble
               type={hist.role === "user" ? "client" : "server"}
@@ -61,9 +96,15 @@ const ChatBox = () => {
           onChange={handleInputChange}
           disabled={isLoading}
         />
-        <button type="submit" className="w-1/6 h-6 text-white">
-          <AiOutlineSearch className="w-full h-full text-white" />
-        </button>
+        {isLoading ? (
+          <div className="cursor-pointer w-1/6 h-6" onClick={stop}>
+            <BsStopCircle className="w-full h-full text-red-400 hover:text-red-500" />
+          </div>
+        ) : (
+          <button type="submit" className="w-1/6 h-6 text-white">
+            <AiOutlineSearch className="w-full h-full text-white" />
+          </button>
+        )}
       </form>
     </Container>
   )
