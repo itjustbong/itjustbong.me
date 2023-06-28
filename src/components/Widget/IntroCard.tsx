@@ -46,7 +46,7 @@ const IntroCard = () => {
       <WhoCard ref={ref} className="scrollbar-hide">
         {이력들.map((이력) => (
           <WhoInnerCard key={이력.content} className="gap-1">
-            <div className="font-semibold text-sm sm:text-base">
+            <div className="font-semibold text-sm sm:text-base underline underline-offset-2">
               {이력.title}
             </div>
             <div className="whitespace-pre-wrap text-center text-xs sm:text-sm">
@@ -63,7 +63,7 @@ export default IntroCard
 
 const WhoInnerCard = styled.div`
   scroll-snap-align: center;
-  background-color: aliceblue;
+  background-color: rgba(255, 255, 255, 0.5);
   width: 100%;
   height: 100%;
   border-radius: 1rem;
@@ -100,6 +100,7 @@ const ScorllTitle = styled.div`
   width: 30rem;
   transition: all ease 0.5s;
   animation: auto-scroll-x 2.5s ease 1;
+  animation-delay: 0.5s;
   height: 2.5rem;
   display: flex;
   align-items: center;
