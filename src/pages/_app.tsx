@@ -30,7 +30,6 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
       <Analytics />
       <Scripts />
       {getLayout(<Component {...pageProps} />)}
-      <FloatingChat />
     </>
   )
 }
