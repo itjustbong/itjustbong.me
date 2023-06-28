@@ -1,10 +1,11 @@
 import styled from "@emotion/styled"
+import { useChat } from "ai/react"
+import axios from "axios"
 import Image from "next/image"
 import { useEffect, useRef } from "react"
 import { AiOutlineSearch } from "react-icons/ai"
 import { BsStopCircle } from "react-icons/bs"
 import ChatBubble from "./ChatBox.Bubble"
-import { useChat } from "ai/react"
 
 const 질문들 = [
   "너는 어떤 사람이야?",
@@ -32,10 +33,19 @@ const ChatBox = () => {
     $.scrollTop = $.scrollHeight
   }, [messages])
 
+  useEffect(() => {
+    if (isLoading) return
+    if (messages.length < 2) return
+    void axios.post("/api/log", {
+      prompt: messages[messages.length - 2].content,
+      reply: messages[messages.length - 1].content,
+    })
+  }, [messages, isLoading])
+
   return (
     <Container>
       <BubbleWrapper ref={ref}>
-        <div className="flex items-center gap-4 ">
+        <div className="flex items-center gap-4">
           <Image
             src="/images/chat-bubble.png"
             height="24"
