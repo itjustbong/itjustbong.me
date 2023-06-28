@@ -1,0 +1,27 @@
+{
+  "folders": [
+    {
+      "path": ".."
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "**/.idea": true,
+      "**/node_modules/": true,
+      // "**/build": true,
+      // "**/dist": true,
+      "**/coverage": true,
+      "**/.cache": true
+    },
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true,
+      "source.fixAll": true
+    },
+    "editor.formatOnSave": true,
+    "typescript.format.enable": true,
+    "typescript.preferences.importModuleSpecifier": "non-relative",
+    "[prisma]": {
+      "editor.defaultFormatter": "Prisma.prisma"
+    }
+  }
+}
