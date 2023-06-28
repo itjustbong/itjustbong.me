@@ -1,4 +1,5 @@
 import styled from "@emotion/styled"
+import { useEffect, useRef } from "react"
 
 const 이력들 = [
   {
@@ -21,6 +22,20 @@ const 이력들 = [
 ]
 
 const IntroCard = () => {
+  const ref = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    if (!ref.current) return
+    const $ = ref.current
+    $.scrollBy(0, 1)
+
+    const dragBackTimeout = setTimeout(() => {
+      $.scrollBy(0, -1)
+    }, 500)
+
+    return () => clearTimeout(dragBackTimeout)
+  }, [])
+
   return (
     <Container className="py-1 px-2 sm:px-4 overflow-hidden">
       <Title className="sm:text-lg">Who Is</Title>
@@ -28,7 +43,7 @@ const IntroCard = () => {
         도전적이며 자기주도적인 삶을 지향합니다.
       </ScorllTitle>
 
-      <WhoCard className="scrollbar-hide">
+      <WhoCard ref={ref} className="scrollbar-hide">
         {이력들.map((이력) => (
           <WhoInnerCard key={이력.content} className="gap-1">
             <div className="font-semibold text-sm sm:text-base">
