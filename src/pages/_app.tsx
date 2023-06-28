@@ -10,6 +10,7 @@ import { NextPage } from "next"
 import { ReactElement, ReactNode } from "react"
 import { AppProps } from "next/app"
 import { Analytics } from "@vercel/analytics/react"
+import FloatingChat from "../components/FloatingChat"
 
 export type NextPageWithLayout<PageProps = {}> = NextPage<PageProps> & {
   getLayout?: (page: ReactElement) => ReactNode
@@ -29,6 +30,7 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
       <Analytics />
       <Scripts />
       {getLayout(<Component {...pageProps} />)}
+      <FloatingChat />
     </>
   )
 }
