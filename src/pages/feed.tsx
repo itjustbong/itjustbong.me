@@ -1,10 +1,10 @@
-import { getPosts, getAllTagsFromPosts, filterPosts } from "@libs/notion"
 import Layout from "@components/Layout"
 import Feed from "@containers/Feed"
+import { filterPosts, getAllTagsFromPosts, getPosts } from "@libs/notion"
 import CONFIG from "../../site.config"
-import { NextPageWithLayout } from "./_app"
-import { TPosts, TTags } from "../types"
 import FloatingChat from "../components/FloatingChat"
+import { TPosts, TTags } from "../types"
+import { NextPageWithLayout } from "./_app"
 
 export async function getStaticProps() {
   try {
@@ -19,7 +19,7 @@ export async function getStaticProps() {
         },
         posts: filteredPost,
       },
-      revalidate: 1,
+      revalidate: 216000, // 하루
     }
   } catch (error) {
     return
