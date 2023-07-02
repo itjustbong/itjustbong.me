@@ -9,7 +9,10 @@ import { NextPageWithLayout } from "./_app"
 export async function getStaticProps() {
   try {
     const posts = await getPosts()
-    const filteredPost = filterPosts(posts)
+    const filteredPost = filterPosts(posts, {
+      acceptStatus: ["Public"],
+      acceptType: ["Post"],
+    })
     const tags = getAllTagsFromPosts(filteredPost)
     return {
       props: {
@@ -19,7 +22,7 @@ export async function getStaticProps() {
         },
         posts: filteredPost,
       },
-      revalidate: 216000, // 하루
+      revalidate: 216000,
     }
   } catch (error) {
     return
@@ -31,11 +34,11 @@ type Props = {
   posts: TPosts
 }
 
-const FeedPage: NextPageWithLayout<Props> = ({ tags, posts }) => {
+const PostPage: NextPageWithLayout<Props> = ({ tags, posts }) => {
   return <Feed tags={tags} posts={posts} />
 }
 
-FeedPage.getLayout = function getlayout(page) {
+PostPage.getLayout = function getlayout(page) {
   return (
     <Layout
       metaConfig={{
@@ -51,4 +54,4 @@ FeedPage.getLayout = function getlayout(page) {
   )
 }
 
-export default FeedPage
+export default PostPage
