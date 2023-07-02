@@ -22,7 +22,7 @@ export async function getStaticProps() {
         },
         posts: filteredPost,
       },
-      revalidate: 216000,
+      revalidate: 216000 * 7,
     }
   } catch (error) {
     return

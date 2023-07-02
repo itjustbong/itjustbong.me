@@ -1,11 +1,11 @@
 import Detail from "@/src/containers/Detail"
-import { getPosts, getPostBlocks, filterPosts } from "@libs/notion"
 import Layout from "@components/Layout"
+import { filterPosts, getPostBlocks, getPosts } from "@libs/notion"
 import CONFIG from "../../site.config"
-import { NextPageWithLayout } from "./_app"
-import { TPost } from "../types"
-import CustomError from "../containers/CustomError"
 import FloatingChat from "../components/FloatingChat"
+import CustomError from "../containers/CustomError"
+import { TPost } from "../types"
+import { NextPageWithLayout } from "./_app"
 
 export async function getStaticPaths() {
   const posts = await getPosts()
@@ -29,12 +29,12 @@ export async function getStaticProps({ params: { slug } }: any) {
 
     return {
       props: { post, blockMap },
-      revalidate: 1,
+      revalidate: 216000 * 7,
     }
   } catch (error) {
     return {
       props: {},
-      revalidate: 1,
+      revalidate: 216000 * 7,
     }
   }
 }
