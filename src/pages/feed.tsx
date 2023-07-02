@@ -19,7 +19,7 @@ export async function getStaticProps() {
         },
         posts: filteredPost,
       },
-      revalidate: 216000, // 하루
+      revalidate: 216000 * 7,
     }
   } catch (error) {
     return
