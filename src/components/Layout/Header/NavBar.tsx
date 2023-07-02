@@ -5,8 +5,8 @@ const NavBar: React.FC = () => {
   const router = useRouter()
   const links = [
     { id: 1, name: "메인", to: "/" },
-    { id: 2, name: "경험", to: "/feed" },
-    // { id: 3, name: "기록", to: "/post" },
+    { id: 2, name: "포스팅", to: "/post" },
+    { id: 3, name: "경험", to: "/feed" },
     { id: 4, name: "이력서", to: "/resume" },
   ]
   return (
