@@ -12,7 +12,7 @@ export default async function handler(
 
   try {
     if (path && typeof path === "string") {
-      await res.revalidate(path)
+      await res.revalidate(`/${path}`)
     } else {
       const posts = await getPosts()
       const revalidateRequests = posts.map((row) =>
