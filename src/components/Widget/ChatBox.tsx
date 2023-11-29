@@ -2,10 +2,11 @@ import styled from "@emotion/styled"
 import { useChat } from "ai/react"
 import axios from "axios"
 import Image from "next/image"
-import { useEffect, useRef } from "react"
+import { FormEvent, useEffect, useRef } from "react"
 import { AiOutlineSearch } from "react-icons/ai"
 import { BsStopCircle } from "react-icons/bs"
 import ChatBubble from "./ChatBox.Bubble"
+import { ChatRequestOptions } from "ai"
 
 const 질문들 = [
   "너는 어떤 사람이야?",
@@ -41,6 +42,18 @@ const ChatBox = () => {
       reply: messages[messages.length - 1].content,
     })
   }, [messages, isLoading])
+
+  const handleSendPrompt = (
+    e: FormEvent<HTMLFormElement>,
+    chatRequestOptions?: ChatRequestOptions | undefined
+  ) => {
+    handleSubmit(e)
+
+    void axios.post("/api/log", {
+      prompt: input,
+      reply: `DATE: ${new Date()}`,
+    })
+  }
 
   return (
     <Container>
@@ -97,7 +110,7 @@ const ChatBox = () => {
       </BubbleWrapper>
 
       <form
-        onSubmit={handleSubmit}
+        onSubmit={handleSendPrompt}
         className="flex gap-1 items-center absolute bottom-5 left-0 right-0 w-5/6 justify-evenly mx-auto"
       >
         <input
