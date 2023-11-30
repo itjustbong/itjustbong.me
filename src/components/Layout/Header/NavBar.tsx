@@ -1,14 +1,24 @@
 import Link from "next/link"
 import { useRouter } from "next/router"
+import { isMobile } from "react-device-detect"
 
 const NavBar: React.FC = () => {
   const router = useRouter()
   const links = [
     { id: 1, name: "메인", to: "/" },
-    { id: 2, name: "포스팅", to: "/post" },
+    // { id: 2, name: "포스팅", to: "/post" },
     { id: 3, name: "경험", to: "/feed" },
     { id: 4, name: "이력서", to: "/resume" },
   ]
+
+  const routeLinks = (to: string) => {
+    if (to === "/resume" && isMobile) {
+      router.push("/resume-mobile")
+    } else {
+      router.push(to)
+    }
+  }
+
   return (
     <div className="flex-shrink-0">
       <ul className="flex flex-row">
@@ -20,7 +30,7 @@ const NavBar: React.FC = () => {
               "font-bold underline underline-offset-8"
             }`}
           >
-            <Link href={link.to}>{link.name}</Link>
+            <div onClick={() => routeLinks(link.to)}>{link.name}</div>
           </li>
         ))}
       </ul>
