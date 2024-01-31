@@ -20,7 +20,7 @@ const NavBar: React.FC = () => {
   }
 
   return (
-    <div className="flex-shrink-0">
+    <div className="flex-shrink-0 cursor-pointer">
       <ul className="flex flex-row">
         {links.map((link) => (
           <li
