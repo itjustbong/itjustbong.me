@@ -33,6 +33,8 @@ const IndexPage: NextPageWithLayout = () => {
           scroll-behavior: smooth;
           scroll-snap-type: x mandatory;
           gap: 1rem;
+          -ms-overflow-style: none;
+          scrollbar-width: none;
           ::-webkit-scrollbar {
             display: none;
           }

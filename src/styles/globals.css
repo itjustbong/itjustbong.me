@@ -59,6 +59,14 @@ body::-webkit-scrollbar-thumb {
   flex-direction: column;
 }
 
+body {
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
 .sticky-nav {
   position: sticky;
   z-index: 10;

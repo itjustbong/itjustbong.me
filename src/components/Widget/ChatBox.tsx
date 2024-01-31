@@ -56,8 +56,8 @@ const ChatBox = () => {
   }
 
   return (
-    <Container>
-      <BubbleWrapper ref={ref}>
+    <Container className="scrollbar-hide">
+      <BubbleWrapper ref={ref} className="scrollbar-hide">
         <div className="flex items-center gap-4">
           <Image
             src="/images/chat-bubble.png"
